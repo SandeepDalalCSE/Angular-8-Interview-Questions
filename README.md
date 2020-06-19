@@ -47,7 +47,7 @@
 
 3. ### What are the building blocks of Angular?
 
-The Main Building blocks of Angular are:
+    The Main Building blocks of Angular are
     *  Directives
     *  Modules
     *  Components
