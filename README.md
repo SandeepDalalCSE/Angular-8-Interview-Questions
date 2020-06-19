@@ -10,6 +10,7 @@
 | <span id="Q2">2</span> | [What is new in Angular 8?](#what-is-new-in-angular-8)|
 | <span id="Q3">3</span> | [What are the building blocks of Angular?](#what-are-the-building-blocks-of-angular)|
 | <span id="Q4">4</span> | [What is a service?](#What-is-a-service)|
+| <span id="Q5">5</span> | [Which command is used to create service?](#Which-command-is-used-to-create service?)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -92,3 +93,15 @@
     The above service uses Http service as a dependency.
 
   **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q4">**⬆ Back to Question 4**</a>
+
+----
+  _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
+  ----
+
+5. ### Which command is used to create service?
+
+` ng gernerate service myservice `
+
+The above command generates sleleton myservice class in
+
+***_src/app/myservice.service.ts_***
