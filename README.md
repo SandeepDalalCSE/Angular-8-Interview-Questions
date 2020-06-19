@@ -105,3 +105,5 @@
 The above command generates sleleton myservice class in
 
 ***_src/app/myservice.service.ts_***
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q5">**⬆ Back to Question 5**</a>
