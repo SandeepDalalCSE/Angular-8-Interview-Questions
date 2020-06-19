@@ -97,11 +97,15 @@
         *  Basic building blocks of Angular.
         *  Made up of template, class and metadata.
 
-    *  Meta Data
+    *  Meta Data :
+
+        *  Tells Angular how to process a class. It is the information angular needs to decide if the particular class is a component, directive, service or just a regular class.
+        * It is used to decorate a class using decorator.
+
     *  Templates : 
 
         *  UI/Views of an angular application; created using HTML.
-        
+
     *  Data Binding
     *  Dependency Injection
     *  Services :
