@@ -91,8 +91,12 @@
     *  Modules : 
 
         *  Logical groupings of components, directives, services etc.
+
+    *  Components :
+
+        *  Basic building blocks of Angular.
+        *  Made up of template, class and metadata.
         
-    *  Components
     *  Meta Data
     *  Templates
     *  Data Binding
