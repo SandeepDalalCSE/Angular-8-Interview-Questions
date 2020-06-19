@@ -35,7 +35,13 @@
         *  It translates the templates and components in HTML and JavaScript.
 
     *  Support for TypeScript (Higher Version)
-    *  Support for Bazal
+    *  Support for Bazel :
+
+        *  Bazel is build tool developed and used by Google.
+        *  The angluar community is working to integrate Bazel tool in to the standard angular toolset to enable developers to perform faster builds on large projects.
+        *  It allows to deploy only what has been changed.
+        *  Opt-in Option with Angular 8.
+
     *  Support for Web Worker Bundling
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
