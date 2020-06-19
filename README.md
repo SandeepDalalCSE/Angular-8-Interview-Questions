@@ -7,7 +7,7 @@
 | No. | Questions |
 |---- | ---------
 | <span id="Q1">1</span> | [What is Angular 8?](#what-is-angular-8)|
-| <span id="Q2">2</span> | [What's new in Angular 8?](#what's-new-in-angular-8)|
+| <span id="Q2">2</span> | [What is new in Angular 8?](#what-is-new-in-angular-8)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -23,7 +23,7 @@
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
   ----
 
-2. ### What's new in Angular 8?
+2. ### What is new in Angular 8?
 
     *  Angular Ivy
     *  Support for TypeScript (Higher Version)
