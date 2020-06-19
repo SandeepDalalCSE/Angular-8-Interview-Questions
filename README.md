@@ -9,6 +9,7 @@
 | <span id="Q1">1</span> | [What is Angular 8?](#what-is-angular-8)|
 | <span id="Q2">2</span> | [What is new in Angular 8?](#what-is-new-in-angular-8)|
 | <span id="Q3">3</span> | [What are the building blocks of Angular?](#what-are-the-building-blocks-of-angular)|
+| <span id="Q4">4</span> | [What is a service?](#What-is-a-service)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -58,3 +59,36 @@
     *  Services
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q3">**⬆ Back to Question 3**</a>
+
+----
+  _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
+  ----
+
+4. ### What is a service?
+    *  Class with specific purpose.
+    *  Used for sharing data, implementing application logic and interacting with external resoures.
+    
+    A service is used when a common functionality needs to be provided to various modules. Services allow for greater separation of concerns for your application and better modularity by allowing you to extract common functionality out of components.
+
+    Let's create a repoService which can be used across components,
+
+    ```typescript
+    import { Injectable } from '@angular/core';
+    import { Http } from '@angular/http';
+
+    @Injectable({ // The Injectable decorator is required for dependency injection to work
+      // providedIn option registers the service with a specific NgModule
+      providedIn: 'root',  // This declares the service with the root app (AppModule)
+    })
+    export class RepoService{
+      constructor(private http: Http){
+      }
+
+      fetchAll(){
+        return this.http.get('https://api.github.com/repositories');
+      }
+    }
+    ```
+    The above service uses Http service as a dependency.
+
+  **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q4">**⬆ Back to Question 4**</a>
