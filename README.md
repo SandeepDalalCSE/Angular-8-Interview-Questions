@@ -96,9 +96,12 @@
 
         *  Basic building blocks of Angular.
         *  Made up of template, class and metadata.
-        
+
     *  Meta Data
-    *  Templates
+    *  Templates : 
+
+        *  UI/Views of an angular application; created using HTML.
+        
     *  Data Binding
     *  Dependency Injection
     *  Services :
