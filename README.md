@@ -88,7 +88,10 @@
           2. Attribute Directives
           3. Structural Directives
 
-    *  Modules
+    *  Modules : 
+
+        *  Logical groupings of components, directives, services etc.
+        
     *  Components
     *  Meta Data
     *  Templates
