@@ -8,6 +8,7 @@
 |---- | ---------
 | <span id="Q1">1</span> | [What is Angular 8?](#what-is-angular-8)|
 | <span id="Q2">2</span> | [What is new in Angular 8?](#what-is-new-in-angular-8)|
+| <span id="Q3">3</span> | [What are the building blocks of Angular?](#what-are-the-building-blocks-of-angular)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -39,3 +40,21 @@
     *  Use of SVG as a template
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q2">**⬆ Back to Question 2**</a>
+
+----
+  _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
+  ----
+
+3. ### What are the building blocks of Angular?
+
+The Main Building blocks of Angular are:
+    *  Directives
+    *  Modules
+    *  Components
+    *  Meta Data
+    *  Templates
+    *  Data Binding
+    *  Dependency Injection
+    *  Services
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q3">**⬆ Back to Question 3**</a>
