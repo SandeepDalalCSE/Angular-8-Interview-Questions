@@ -34,7 +34,10 @@
         *  It generates smaller bundles; faster compilation.
         *  It translates the templates and components in HTML and JavaScript.
 
-    *  Support for TypeScript (Higher Version)
+    *  Support for TypeScript (Higher Version) : 
+
+        * It supports TypeScript 3.4; no version below 3.4.
+
     *  Support for Bazel :
 
         *  Bazel is build tool developed and used by Google.
@@ -45,7 +48,12 @@
     *  Support for Web Worker Bundling
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
-    *  Differential Loading by Default
+    *  Differential Loading by Default : 
+        
+        *  Creates two bundles which will be loaded according to the browser version and support : 
+            1. ES6+ Bundle - For New browsers support; So that new browser loads less code to run the app in the browser.
+            2. ES5 Bundle - For Old browsers support; So that old browser loads more code to run the app in the browser.
+            
     *  Improvements in AngularJS Migration
     *  Lazy Loading with Dynamics Imports
     *  Opt-in usage sharing
