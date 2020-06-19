@@ -12,6 +12,7 @@
 | <span id="Q4">4</span> | [What is a service?](#What-is-a-service)|
 | <span id="Q5">5</span> | [Which command is used to create service?](#Which-command-is-used-to-create-service)|
 | <span id="Q6">6</span> | [What is a Directive?](#What-is-a-Directive)|
+| <span id="Q7">7</span> | [What are the different Directives?](#What-are-the-different-Directives)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -118,4 +119,17 @@ The above command generates sleleton myservice class in
 A directive modifies or manipulate the DOM by changing the appearance, behaviour or layout of DOM elements. Angular Directives are basically a **javaScript Class**.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q6">**⬆ Back to Question 6**</a>
+
+----
+  _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
+  ----
+
+7. ### What are the different Directives?
+    There are 3 different directives:
+    
+    *  Component Directives
+    *  Attribute Directives
+    *  Structural Directives  
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q7">**⬆ Back to Question 7**</a>
 
