@@ -45,7 +45,11 @@
         *  It allows to deploy only what has been changed.
         *  Opt-in Option with Angular 8.
 
-    *  Support for Web Worker Bundling
+    *  Support for Web Worker Bundling :
+
+        * Web workers allow you to run CPU-intensive computations in a background thread, freeing the main thread to update the user interface. 
+        * If you find your application performs a lot of computations, such as generating CAD drawings or doing heavy geometrical calculations, using web workers can help increase your application's performance.
+        
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
     *  Differential Loading by Default : 
