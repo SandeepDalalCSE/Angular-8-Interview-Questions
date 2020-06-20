@@ -37,6 +37,13 @@
     *  Support for TypeScript (Higher Version) : 
 
         * It supports TypeScript 3.4; no version below 3.4.
+        * It is superset of javascript.
+        ![ScreenShot](images/typescript-javascript.png)
+        * Points out compilation errors at development time only.
+        * Object oriented programming language.
+        * Introduces strong typing.
+        * Portable across browsers, devices and OS.
+        * At the end, In Angular; Typescript is converted into Javascript.
 
     *  Support for Bazel :
 
@@ -49,7 +56,7 @@
 
         * Web workers allow you to run CPU-intensive computations in a background thread, freeing the main thread to update the user interface. 
         * If you find your application performs a lot of computations, such as generating CAD drawings or doing heavy geometrical calculations, using web workers can help increase your application's performance.
-        
+
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
     *  Differential Loading by Default : 
