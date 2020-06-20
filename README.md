@@ -38,7 +38,7 @@
 
         * It supports TypeScript 3.4; no version below 3.4.
         * It is superset of javascript.
-        ![ScreenShot](images/typescript-javascript.png)
+        * ![ScreenShot](images/typescript-javascript.png)
         * Points out compilation errors at development time only.
         * Object oriented programming language.
         * Introduces strong typing.
