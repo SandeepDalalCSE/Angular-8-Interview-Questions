@@ -136,7 +136,10 @@
                     <input type="email" [(ngModel)]="user.email">
                     ```  
 
-    *  Dependency Injection
+    *  Dependency Injection : 
+
+        *  Dependency Injection is the technique in which classes receive thier dependencies from the external sources rathor than creating themselves.
+        
     *  Services :
 
         *  Class with specific purpose.
