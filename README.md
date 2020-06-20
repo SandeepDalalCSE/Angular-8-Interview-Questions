@@ -57,6 +57,9 @@
     *  Improvements in AngularJS Migration
     *  Lazy Loading with Dynamics Imports :
 
+        *  Delay the loading of an object until it is required.
+        *  Features loaded only when user the user navigates to their routes for the first time.
+        *  Keeps the initial bundle size smaller; decreases load time. 
         *  Standard dynamic import syntax is  used.
 
         *   ```typescript
@@ -67,6 +70,7 @@
             }
             ];
             ```
+
     *  Opt-in usage sharing
     *  Angular Firebase
     *  Use of SVG as a template
@@ -139,7 +143,7 @@
     *  Dependency Injection : 
 
         *  Dependency Injection is the technique in which classes receive thier dependencies from the external sources rathor than creating themselves.
-        
+
     *  Services :
 
         *  Class with specific purpose.
