@@ -15,6 +15,7 @@
 | <span id="Q7">7</span> | [What is use of `ngFor` directive?](#What-is-use-of-ngFor-directive)|
 | <span id="Q8">8</span> | [What is use of `ngClass` directive?](#What-is-use-of-ngClass-directive)|
 | <span id="Q9">9</span> | [What is use of `ngStyle` directive?](#What-is-use-of-ngStyle-directive)|
+| <span id="Q10">10</span> | [What is Angular CLI?](#What-is-Angular-CLI)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -258,3 +259,23 @@ It is used to add/remove CSS Class.
 It is used to modify the style of an HTML Element using expression and also used to change the styles of HTML Element dynamically.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q9">**⬆ Back to Question 9**</a>
+
+----
+  _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
+  ----
+
+
+10. ### What is Angular CLI?
+
+* Command Line Interface Tool
+* Create Angular Application with single line commands.
+* Some Angular CLI commands -
+
+    *  ng new - generates new angular projects.
+    *  ng build - compiles angular app and builds the project for production.
+    *  ng generate - generates components, services, directives. etc
+    *  ng serve - builds and serve the entire projects for development.
+    *  ng test - run unit tests.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q10">**⬆ Back to Question 10**</a>
+
