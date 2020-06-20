@@ -38,7 +38,7 @@
 
         * It supports TypeScript 3.4; no version below 3.4.
         * It is superset of javascript.
-        <img src="images/typescript-javascript.png" width="200px" height="200px">
+            <img src="images/typescript-javascript.png" width="200px" height="200px" float="right">
         * Points out compilation errors at development time only.
         * Object oriented programming language.
         * Introduces strong typing.
