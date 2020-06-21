@@ -75,7 +75,18 @@
         ` ng generate webWorker my-worker `
 
     *  New changes in ViewChild and ContentChild
-    *  Builder API and Workspace APIs in the CLI
+    *  Builder API and Workspace APIs in the CLI :
+      
+       ***_Builder APIs -_***
+        * Angular 8 released new Builder APIs that allow you to tap into ng build, ng test and ng run to perform processes like build and deployment.
+        * With Angular 8 you can try the latest version of AngularFire(The official Angular library for Firebase), which adds a deploy command, making build & deploy to Firebase easier than ever:
+          * ` ng add @angular/fire `
+          * ` ng run my-app:deploy `
+
+        ***Workspace APIs -_***
+         * Previously developers had to manually open and modify their angular.json to make changes to the workspace configuration.
+         * With Angular 8.0, new APIs to make it easier to read and modify this file.
+          
     *  Differential Loading by Default : 
         * Differential loading is a process by which the browser based on its own capabilities chooses between modern or legacy JavaScript.
         *  Creates two bundles which will be loaded according to the browser version and support : 
