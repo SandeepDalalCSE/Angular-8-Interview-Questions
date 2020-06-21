@@ -30,6 +30,7 @@
 | <span id="Q22">22</span> | [How to add style to your component in html which will be applicable to that particular component only?](#How-to-add-style-to-your-component-in-html-which-will-be-applicable-to-that-particular-component-only)|
 | <span id="Q23">23</span> | [How to use selector as attribute?](#How-to-use-selector-as-attribute)|
 | <span id="Q24">24</span> | [How to use selector as class?](#How-to-use-selector-as-class)|
+| <span id="Q25">25</span> | [How to use selector as element?](#How-to-use-selector-as-element)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -572,6 +573,11 @@ backtick with **“template”** property.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q21">**⬆ Back to Question 21**</a>
 
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
+
 22. ### How to add style to your component in html which will be applicable to that particular component only?
 
 * This can be achieved by using **“styles”** instead of **“styleUrls”** property of @Component decorator, both properties accept array.
@@ -585,6 +591,11 @@ stylesUrls: [‘./search.component.less’],
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q22">**⬆ Back to Question 22**</a>
+
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
 
 23. ### How to use selector as attribute?
 
@@ -602,6 +613,11 @@ selector: ‘[search]’,
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q23">**⬆ Back to Question 23**</a>
+
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
 
 24. ### How to use selector as class?
 
@@ -621,3 +637,23 @@ selector: ‘.search’,
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q24">**⬆ Back to Question 24**</a>
 
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
+25. ### How to use selector as element?
+
+* Use selector property of @Component decorator.
+e.g.
+```typescript
+@Component({
+selector: ‘search’,
+..
+})
+```
+* And then use it as element in html. 
+```html
+<search></search>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q25">**⬆ Back to Question 25**</a>
