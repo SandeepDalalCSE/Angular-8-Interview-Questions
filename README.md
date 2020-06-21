@@ -715,6 +715,6 @@ component.
 
 28. ### How to pass data from child component to parent component?
 
-
+* This can be achieved using event binding.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q28">**⬆ Back to Question 28**</a>
