@@ -158,7 +158,8 @@
         *  UI/Views of an angular application; created using HTML.
 
     *  Data Binding : 
-
+        
+        *  Data binding is basically communication between Typescript code and template.
         *  Data binding is a core concept in Angular and allows to define communication between a component and the DOM, making it very easy to define interactive applications without worrying about pushing and pulling data. 
         *  There are four forms of data binding(divided as 3 categories) which differ in the way the data is flowing.
           
