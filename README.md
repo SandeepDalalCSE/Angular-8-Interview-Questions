@@ -696,7 +696,10 @@ e.g.
 * Then add decorator `@Input` to the child component property in Typescript file, otherwise property will not be accessible to outside components. 
 * `app-child-element.component.ts`
 ```typescript
+import { Input } from '@angular/core';
+...
 @Input someproperty;
+...
 ```
 * @Input is part of angular core. This is how custom property binding is done.
 
