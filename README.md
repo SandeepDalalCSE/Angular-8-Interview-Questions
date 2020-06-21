@@ -754,7 +754,7 @@ export class ChildElementComponent {
 * Add decorator @Output against property in child component.
 e.g.
 ```diff
-import { Component, EventEmitter } from '@angular/core';
++ import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child-element',
