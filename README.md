@@ -24,6 +24,7 @@
 | <span id="Q16">16</span> | [Difference between npm start and ng serve?](#Difference-between-npm-start-and-ng-serve)|
 | <span id="Q17">17</span> | [Explain Angular application flow.](#Explain-Angular-application-flow)|
 | <span id="Q18">18</span> | [What is app-root?](#What-is-app-root)|
+| <span id="Q19">19</span> | [What is Module?](#What-is-Module)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -519,3 +520,25 @@ component. You can associate component with view using
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q18">**⬆ Back to Question 18**</a>
+
+----
+  _Questions_ <a href="#Q11">**11**</a> | <a href="#Q12">**12**</a> | <a href="#Q13">**13**</a> | <a href="#Q14">**14**</a> | <a href="#Q15">**15**</a> | <a href="#Q16">**16**</a> | <a href="#Q17">**17**</a> | <a href="#Q18">**18**</a> | <a href="#Q19">**19**</a> | <a href="#Q20">**20**</a>
+  ----
+
+19. ### What is Module?
+
+* Angular uses **_module_** to bundle pieces i.e. components to packages. It gives angular information about functionalities i.e. components, pipes that application has.
+* We use `@NgModule` to decorate module. We import `@NgModule` from `@angular/core`.
+* To register component in module we can use `declarations` property of @NgModule and import it to tell Typescript its location. e.g.
+* ```typescript
+  @NgModule({
+    imports: [
+    BrowserModule,
+    ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
+    })
+  ```
+* Imports property is used to import other modules to current module.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q19">**⬆ Back to Question 19**</a>
