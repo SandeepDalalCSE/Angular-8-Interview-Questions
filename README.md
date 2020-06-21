@@ -267,14 +267,15 @@ It is used to modify the style of an HTML Element using expression and also used
 
 10. ### What is Angular CLI?
 
-* Command Line Interface Tool
-* Create Angular Application with single line commands.
+* The Angular CLI is a command-line interface tool that we use to
+initialize, develop and maintain Angular applications.
+* Creates Angular Application with single line commands.
 * Some Angular CLI commands -
 
     *  ng new - generates new angular projects.
     *  ng build - compiles angular app and builds the project for production.
-    *  ng generate - generates components, services, directives. etc
-    *  ng serve - builds and serve the entire projects for development.
+    *  ng generate - generates components, services, directives, routes, pipes etc.
+    *  ng serve - Easily test app locally while development.
     *  ng test - run unit tests.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q10">**⬆ Back to Question 10**</a>
