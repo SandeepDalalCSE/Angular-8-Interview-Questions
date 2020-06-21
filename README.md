@@ -27,6 +27,7 @@
 | <span id="Q19">19</span> | [What is Module?](#What-is-Module)|
 | <span id="Q20">20</span> | [How to create component from CLI?](#How-to-create-component-from-CLI)|
 | <span id="Q21">21</span> | [How to use inline template in component?](#How-to-use-inline-template-in-component)|
+| <span id="Q22">22</span> | [How to add style to your component in html which will be applicable to that particular component only?](#How-to-add-style-to-your-component-in-html-which-will-be-applicable-to-that-particular-component-only)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -564,7 +565,21 @@ component. You can associate component with view using
 
 21. ### How to use inline template in component?
 * Use **_“template”_** instead of **_“templateUrl”_** in **@Component**
-decorator. If you want to write multiline html code then use **` ` `**
+decorator. If you want to write multiline html code then use **`**
 backtick with **“template”** property.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q21">**⬆ Back to Question 21**</a>
+
+22. ### How to add style to your component in html which will be applicable to that particular component only?
+
+* This can be achieved by using **“styles”** instead of **“styleUrls”** property of @Component decorator, both properties accept array.
+e.g.
+```typescript
+@Component({
+Selector: ‘search’,
+stylesUrls: [‘./search.component.less’],
+..
+})
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q22">**⬆ Back to Question 22**</a>
