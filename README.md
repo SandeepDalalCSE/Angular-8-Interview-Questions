@@ -28,6 +28,7 @@
 | <span id="Q20">20</span> | [How to create component from CLI?](#How-to-create-component-from-CLI)|
 | <span id="Q21">21</span> | [How to use inline template in component?](#How-to-use-inline-template-in-component)|
 | <span id="Q22">22</span> | [How to add style to your component in html which will be applicable to that particular component only?](#How-to-add-style-to-your-component-in-html-which-will-be-applicable-to-that-particular-component-only)|
+| <span id="Q23">23</span> | [How to use selector as attribute?](#How-to-use-selector-as-attribute)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -583,3 +584,20 @@ stylesUrls: [‘./search.component.less’],
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q22">**⬆ Back to Question 22**</a>
+
+23. ### How to use selector as attribute?
+
+* Enclose selector with square braces.
+e.g.
+```typescript
+@Component({
+selector: ‘[search]’,
+..
+})
+```
+* And then use it as html attribute. 
+```html
+<div search> </div>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q23">**⬆ Back to Question 23**</a>
