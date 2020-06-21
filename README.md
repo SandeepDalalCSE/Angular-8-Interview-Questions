@@ -617,4 +617,7 @@ selector: ‘.search’,
 <div class=”search”> </div>
 ```
 
+*Note : Using Selector as `id` is not allowed in angular.*
+
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q24">**⬆ Back to Question 24**</a>
+
