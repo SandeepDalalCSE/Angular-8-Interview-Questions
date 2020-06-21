@@ -71,6 +71,8 @@
 
         * Web workers allow you to run CPU-intensive computations in a background thread, freeing the main thread to update the user interface. 
         * If you find your application performs a lot of computations, such as generating CAD drawings or doing heavy geometrical calculations, using web workers can help increase your application's performance.
+        *  With Angular 8, you can now generate new web workers from the CLI. To add a worker to the project, you can run:
+        ` ng generate webWorker my-worker `
 
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
