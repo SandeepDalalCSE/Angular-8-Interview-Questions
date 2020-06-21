@@ -31,6 +31,7 @@
 | <span id="Q23">23</span> | [How to use selector as attribute?](#How-to-use-selector-as-attribute)|
 | <span id="Q24">24</span> | [How to use selector as class?](#How-to-use-selector-as-class)|
 | <span id="Q25">25</span> | [How to use selector as element?](#How-to-use-selector-as-element)|
+| <span id="Q26">26</span> | [How to capture data emitted with event in event binding?](#How-to-capture-data-emitted-with-event-in-event-binding)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -658,3 +659,18 @@ selector: ‘search’,
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q25">**⬆ Back to Question 25**</a>
+
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
+26. ### How to capture data emitted with event in event binding?
+
+* We can capture data emitted with event in event binding using **$event** as method input,
+e.g.
+```html
+<input type=”text” (input)=”onUpdat($event)”></input>
+```
+* Through $event data will be received in method with data type as “Event”.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q26">**⬆ Back to Question 26**</a>
