@@ -341,7 +341,7 @@ directives, services and pipes.
 15. ### How to use bootstrap with angular?
 
 * Open terminal, navigate to project folder.
-* Execute npm command: ` npm install - - save bootstrap `
+* Execute npm command: ` npm install --save bootstrap `
 * Now verify if node_modules folder contain third party package
 bootstrap that we have installed.
 * In ` angular.json ` you can see **_styles_** array.
