@@ -42,10 +42,12 @@
 
     *  Angular Ivy :
         
-        *  Ivy is the new compiler/runtime of Angluar.
+        *  Ivy is the new compiler/runtime of Angluar available for testing.
         *  It is the latest rendering engine but not defualt engine for Angular 8.
         *  It generates smaller bundles; faster compilation.
         *  It translates the templates and components in HTML and JavaScript.
+        *  You can enable Ivy in your project as below : 
+        ` ng new angular-project --enable-ivy `
 
     *  Support for TypeScript (Higher Version) : 
 
