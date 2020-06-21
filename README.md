@@ -29,6 +29,7 @@
 | <span id="Q21">21</span> | [How to use inline template in component?](#How-to-use-inline-template-in-component)|
 | <span id="Q22">22</span> | [How to add style to your component in html which will be applicable to that particular component only?](#How-to-add-style-to-your-component-in-html-which-will-be-applicable-to-that-particular-component-only)|
 | <span id="Q23">23</span> | [How to use selector as attribute?](#How-to-use-selector-as-attribute)|
+| <span id="Q24">24</span> | [How to use selector as class?](#How-to-use-selector-as-class)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -601,3 +602,19 @@ selector: ‘[search]’,
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q23">**⬆ Back to Question 23**</a>
+
+24. ### How to use selector as class?
+
+* Add dot (.) at the start of selector name.
+```typescript
+@Component({
+selector: ‘.search’,
+. .
+})
+```
+* And then use it in html as class.
+```html
+<div class=”search”> </div>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q24">**⬆ Back to Question 24**</a>
