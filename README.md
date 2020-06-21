@@ -540,5 +540,7 @@ component. You can associate component with view using
     })
   ```
 * Imports property is used to import other modules to current module.
+* To create module from CLI :
+  `ng generate module <name>`
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q19">**⬆ Back to Question 19**</a>
