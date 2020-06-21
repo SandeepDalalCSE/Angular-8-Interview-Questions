@@ -22,6 +22,7 @@
 | <span id="Q14">14</span> | [What is `e2e` folder?](#What-is-e2e-folder)|
 | <span id="Q15">15</span> | [How to use bootstrap with angular?](#How-to-use-bootstrap-with-angular)|
 | <span id="Q16">16</span> | [Difference between npm start and ng serve?](#Difference-between-npm-start-and-ng-serve)|
+| <span id="Q17">17</span> | [Explain Angular application flow.](#Explain-Angular-application-flow)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -375,3 +376,103 @@ inside ` “start” ` in ` package.json `.
 when npm start command is executed.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q16">**⬆ Back to Question 16**</a>
+
+----
+  _Questions_ <a href="#Q11">**11**</a> | <a href="#Q12">**12**</a> | <a href="#Q13">**13**</a> | <a href="#Q14">**14**</a> | <a href="#Q15">**15**</a> | <a href="#Q16">**16**</a> | <a href="#Q17">**17**</a> | <a href="#Q18">**18**</a> | <a href="#Q19">**19**</a> | <a href="#Q20">**20**</a>
+  ----
+
+17. ### Explain Angular application flow.
+* `main.ts` file
+  ```typescript
+  import { enableProdMode } from '@angular/core';
+  import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+  import { AppModule } from './app/app.module';
+  import { environment } from './environments/environment';
+
+  if (environment.production) {
+  enableProdMode();
+  }
+
+  platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+  ```
+* The ` main.ts ` is the main file of angular application which
+bootstraps the app. This main file bootstraps application with
+default module as below:
+```typescript
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+* As you can see above “AppModule” is the default module which
+will be picked up during application bootstrap.
+* ` app.module.ts ` file
+  ```typescript
+  import { BrowserModule } from '@angular/platform-browser';
+  import { NgModule } from '@angular/core';
+  import { FormsModule } from '@angular/forms';
+  import { HttpClientModule } from '@angular/common/http';
+
+  import { AppComponent } from './app.component';
+  // Registering persons component in app module.
+  import { PersonsComponent } from './persons/persons.component';
+  import { PersonInputComponent } from './persons/person-input.component';
+  import { AppRoutingModule } from './app-routing.module';
+
+  @NgModule({
+  // the selector of persons component will look in all other component in the declarations.
+    declarations: [
+      AppComponent,
+      PersonsComponent,
+      PersonInputComponent
+    ],
+    imports: [
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+  export class AppModule { }
+  ```
+* The ` app.module.ts ` is the default module or you can create your
+own modules. 
+
+  * The AppModule is Typescript class with special
+decorator or annotation @NgModule which tells angular CLI on
+how to process this file. So this will be processed as module file
+which will contain all of your Components, Services etc.
+```typescript
+Bootstrap: [AppComponent]
+```
+* Above property basically tells angular to bootstrap application with
+the AppComponent which becomes default component.
+* The AppComponent is picked up during application bootstrap
+which is basically the default component of angular application.
+* Component is basically view which you see in the browser.
+* AppComponent is Typescript class with decorator “@Component”
+which contain information about view and how to render
+component. You can associate component with view using
+“templateUrl” property of @Component decorator.
+
+    * ` app.component.ts` file
+      ```typescript
+      import { Component } from '@angular/core';
+
+      @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+      })
+      export class AppComponent {
+      title = 'Angular-Project';
+      }
+      ```
+    * ` app.component.html ` file for **_view_**
+      ```typescript
+      <router-outlet></router-outlet>
+      ```
+
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q17">**⬆ Back to Question 17**</a>
