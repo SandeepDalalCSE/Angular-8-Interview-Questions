@@ -21,6 +21,7 @@
 | <span id="Q13">13</span> | [What is `src` and `app` folder?](#What-is-src-and-app-folder)|
 | <span id="Q14">14</span> | [What is `e2e` folder?](#What-is-e2e-folder)|
 | <span id="Q15">15</span> | [How to use bootstrap with angular?](#How-to-use-bootstrap-with-angular)|
+| <span id="Q16">16</span> | [Difference between npm start and ng serve?](#Difference-between-npm-start-and-ng-serve)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -353,3 +354,24 @@ project,
   ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q15">**⬆ Back to Question 15**</a>
+
+----
+  _Questions_ <a href="#Q11">**11**</a> | <a href="#Q12">**12**</a> | <a href="#Q13">**13**</a> | <a href="#Q14">**14**</a> | <a href="#Q15">**15**</a> | <a href="#Q16">**16**</a> | <a href="#Q17">**17**</a> | <a href="#Q18">**18**</a> | <a href="#Q19">**19**</a> | <a href="#Q20">**20**</a>
+  ----
+
+16. ### Difference between npm start and ng serve?
+
+* When you run “npm start” it will call whatever command written
+inside ` “start” ` in ` package.json `.
+  ```json
+  “scripts”: {
+  “ng”: “ng”,
+  “start”: “ng serves”
+  .
+  .
+  }
+  ```
+* For example: Above content in package.json will call ` “ng serve” `
+when npm start command is executed.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q16">**⬆ Back to Question 16**</a>
