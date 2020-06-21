@@ -25,7 +25,8 @@
 | <span id="Q17">17</span> | [Explain Angular application flow.](#Explain-Angular-application-flow)|
 | <span id="Q18">18</span> | [What is app-root?](#What-is-app-root)|
 | <span id="Q19">19</span> | [What is Module?](#What-is-Module)|
-| <span id="Q19">19</span> | [How to create component from CLI?](#How-to-create-component-from-CLI)|
+| <span id="Q20">20</span> | [How to create component from CLI?](#How-to-create-component-from-CLI)|
+| <span id="Q21">21</span> | [How to use inline template in component?](#How-to-use-inline-template-in-component)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -557,3 +558,13 @@ component. You can associate component with view using
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q20">**⬆ Back to Question 20**</a>
 
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
+21. ### How to use inline template in component?
+* Use **_“template”_** instead of **_“templateUrl”_** in **@Component**
+decorator. If you want to write multiline html code then use **` ` `**
+backtick with **“template”** property.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q21">**⬆ Back to Question 21**</a>
