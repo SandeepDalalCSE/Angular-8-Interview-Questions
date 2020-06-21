@@ -77,7 +77,7 @@
     *  New changes in ViewChild and ContentChild
     *  Builder API and Workspace APIs in the CLI
     *  Differential Loading by Default : 
-        
+        * Differential loading is a process by which the browser based on its own capabilities chooses between modern or legacy JavaScript.
         *  Creates two bundles which will be loaded according to the browser version and support : 
             1. ES6+ Bundle - For New browsers support; So that new browser loads less code to run the app in the browser.
             2. ES5 Bundle - For Old browsers support; So that old browser loads more code to run the app in the browser.
