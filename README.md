@@ -456,7 +456,7 @@ which contain information about view and how to render
 component. You can associate component with view using
 “templateUrl” property of @Component decorator.
 
-    * ` app.component.ts` file
+    * ` app.component.ts` file for **_metadata and application logic_**.
       ```typescript
       import { Component } from '@angular/core';
 
