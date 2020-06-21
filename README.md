@@ -684,8 +684,8 @@ e.g.
 27. ### How to access property of child component from parent component?
 
 * For this you can use **custom property binding**. 
-* Lets Say `app` *component* is the parent component. and `app-child-element` *component* is the child component.
-* In *app.component.html* file and then in **app-child-element component tag** use property to be used in square brackets[] as property binding assign value to it.
+* Lets Say `app` *component* is the parent component. and `child-element` *component* is the child component.
+* In *app.component.html* file and then in **child-element component tag** use property to be used in square brackets[] as property binding assign value to it.
 e.g.
 
 * `app.component.html`
@@ -695,7 +695,7 @@ e.g.
 ...
 ```
 * Then add decorator `@Input` to the child component property in Typescript file, otherwise property will not be accessible to outside components. 
-* `app-child-element.component.ts`
+* `child-element.component.ts`
 ```typescript
 import { Input } from '@angular/core';
 ...
@@ -716,5 +716,64 @@ component.
 28. ### How to pass data from child component to parent component?
 
 * This can be achieved using event binding.
+* Lets say `app` *component* is the parent component. and `child-element` *component* is the child component.
+* Create properties in `child-element` *component* which is a child component and assign them EventEmitter in the `child-element.component.ts` file.
+
+e.g.
+```typescript
+import { Component, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child-element',
+  templateUrl: './child-element.component.html'
+})
+export class ChildElementComponent {
+  onUpdate = new EventEmitter<>();
+}
+```
+* Setup what event should emit using methods in child class.
+
+e.g.
+```diff
+import { Component, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child-element',
+  templateUrl: './child-element.component.html'
+})
+
+export class ChildElementComponent {
+  onUpdate = new EventEmitter<>();
++  onUpdateMethod() {
++  this.onUpdate.emit({
++    propertyToBeEmitted: this.propertyToBeEmitted
++  });
++  }
+}
+```
+* Add decorator @Output against property in child component.
+e.g.
+```diff
+import { Component, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child-element',
+  templateUrl: './child-element.component.html'
+})
+
+export class ChildElementComponent {
++  @Output onUpdate = new EventEmitter<>();
+  this.onUpdate.emit({
+  onUpdateMethod() {
+    propertyToBeEmitted: this.propertyToBeEmitted
+  });
+  }
+}
+```
+* Use this event in parent html ie `app.component.html` with child component tag.
+e.g.
+```html
+<app-child-element (onUpdate)=”onUpdateMethod($event)”></app-child-element>
+```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q28">**⬆ Back to Question 28**</a>
