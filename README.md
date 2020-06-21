@@ -19,6 +19,7 @@
 | <span id="Q11">11</span> | [How to install angular CLI?](#How-to-install-angular-CLI)|
 | <span id="Q12">12</span> | [What are IDEs that can be used to develop angular application?](#What-are-IDEs-that-can-be-used-to-develop-angular-application)|
 | <span id="Q13">13</span> | [What is `src` and `app` folder?](#What-is-src-and-app-folder)|
+| <span id="Q14">14</span> | [What is `e2e` folder?](#What-is-e2e-folder)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -316,8 +317,18 @@ A few main IDEs are :
 
 13. ### What is `src` and `app` folder?
 
-* In `src` folder your project is created,
-* In `app` folder you can write your code using components, routes,
+* In `src` folder - your project is created,
+* In `app` folder - you can write your code using components, routes,
 directives, services and pipes.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q13">**⬆ Back to Question 13**</a>
+
+----
+  _Questions_ <a href="#Q11">**11**</a> | <a href="#Q12">**12**</a> | <a href="#Q13">**13**</a> | <a href="#Q14">**14**</a> | <a href="#Q15">**15**</a> | <a href="#Q16">**16**</a> | <a href="#Q17">**17**</a> | <a href="#Q18">**18**</a> | <a href="#Q19">**19**</a> | <a href="#Q20">**20**</a>
+  ----
+
+14. ### What is `e2e` folder?
+
+* It is required for end to end testing of angular application.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q14">**⬆ Back to Question 14**</a>
