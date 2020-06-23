@@ -142,10 +142,35 @@
     *  Directives :
 
         * A directive modifies or manipulate the DOM by changing the appearance, behaviour or layout of DOM elements. Angular Directives are basically a **javaScript Class**.
+        * Directives are instructions in DOM, Components are directives as well.
+        * Directive has selector which can be used as attribute as well as element in html.
+        * Directives are more generally used as attribute.
+        e.g.
+        
+            * **_In Typescript File_** : To create directive.
+            ```typescript
+            @Directive({
+            selector:’[makeAppFancy]’
+            })
+            ```
+            * **_In Html File_** : To use that custom directive.
+            ```html
+            <p makeAppFancy></p>
+            ```
         * There are 3 different directives:
-          1. Component Directives
-          2. Attribute Directives
-          3. Structural Directives
+          1. Component Directives : 
+
+              * Directives with html template.
+
+          2. Attribute Directives :
+
+              * Change the appearance or behaviour of an element, component, or another directive which is present. 
+              * e.g. **ngStyle**.
+
+          3. Structural Directives :
+
+              * Change the DOM layout by adding or removing DOM elements. 
+              * e.g. **ngFor**, **ngIf**.
 
     *  Modules : 
 
@@ -854,6 +879,31 @@ var abc = this.someLocalReference.nativeElement.value;
   ----
  
 33. ### What is use of ng-content? 
+
+* By default anything placed inside opening and closing tag of component is last to be displayed. To display such content you should use `<ng-content>`.
+* Consider a simple `<component-content>` component:
+
+  * e.g.
+  ```html
+  <div>
+  Hi, This is components html !!!
+  <ng-content></ ng-content >
+  </div>
+  <component-content>
+  <div>This text will be displayed inside ng-content</div>
+  </component-content>
+  ```
+* The HTML content passed within the opening and closing tags
+of <component-content> component is the content to be projected. This is what we call Content Projection. The content will
+be rendered inside the <ng-content>within the component.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q33">**⬆ Back to Question 33**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+34. ### What is use of ng-content? 
 
 * By default anything placed inside opening and closing tag of component is last to be displayed. To display such content you should use `<ng-content>`.
 * Consider a simple `<component-content>` component:
