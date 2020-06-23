@@ -286,7 +286,32 @@ directive.
 ```
 * In above example only if *isRole* variable is `true` then only **“Hi User”**
 text will be displayed on UI.
+* To use `else` with `ngIf`:
 
+  * Create `<ng-template>` with local reference and in else place that local reference.
+
+  e.g.
+  ```html
+  <div *ngIf=”isRole”;else noRole>
+  <h3>Hi User</h3>
+  </div>
+
+  <ng-template #noRole>
+  <h3>Hi Unknown</h3>
+  </ng-template >
+  ```
+  
+  * Another alternative could be to use ngIf with ! Expression.
+  
+  e.g.
+  ```html
+  <div *ngIf=”isRole >
+  <h3>Hi User</h3>
+  </div>
+  <div *ngIf=”!isRole” >
+  <h3>Hi Unknown</h3>
+  </div>
+  ```
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q5">**⬆ Back to Question 5**</a>
 
 ----
