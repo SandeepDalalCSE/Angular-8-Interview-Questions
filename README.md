@@ -38,6 +38,7 @@
 | <span id="Q30">30</span> | [What is view encapsulation and how to disable it?](#What-is-view-encapsulation-and-how-to-disable-it)|
 | <span id="Q31">31</span> | [What is use of local reference?](#What-is-use-of-local-reference)|
 | <span id="Q32">32</span> | [How to access local reference in Typescript code?](#How-to-access-local-reference-in-Typescript-code)|
+| <span id="Q33">33</span> | [What is use of ng-content?](#What-is-use-of-ng-content)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -847,3 +848,28 @@ var abc = this.someLocalReference.nativeElement.value;
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q32">**⬆ Back to Question 32**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+33. ### What is use of ng-content? 
+
+* By default anything placed inside opening and closing tag of component is last to be displayed. To display such content you should use `<ng-content>`.
+* Consider a simple `<component-content>` component:
+
+  * e.g.
+  ```html
+  <div>
+  Hi, This is components html !!!
+  <ng-content></ ng-content >
+  </div>
+  <component-content>
+  <div>This text will be displayed inside ng-content</div>
+  </component-content>
+  ```
+* The HTML content passed within the opening and closing tags
+of <component-content> component is the content to be projected. This is what we call Content Projection. The content will
+be rendered inside the <ng-content>within the component.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q33">**⬆ Back to Question 33**</a>
