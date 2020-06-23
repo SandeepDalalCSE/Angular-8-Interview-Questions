@@ -775,5 +775,16 @@ e.g.
 ```html
 <app-child-element (onUpdate)=”onUpdateMethod($event)”></app-child-element>
 ```
+**_Note_** : To use alias with event -
+Pass argument to @output as
+`@Output(‘someArgument’)`
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q28">**⬆ Back to Question 28**</a>
+
+----
+  _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
+  ----
+
+29. ### 
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q29">**⬆ Back to Question 29**</a>
