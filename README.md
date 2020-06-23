@@ -838,7 +838,7 @@ e.g.
 
 e.g.
 ```typescript
-@ViewChild(‘someLocalReference’) someLocalReference;
+  @ViewChild(‘someLocalReference’) someLocalReference;
 ```
 * Here, `someLocalReference` is local reference. This property can
 now be used in Typescript code as:
