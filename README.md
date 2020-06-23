@@ -36,6 +36,7 @@
 | <span id="Q28">28</span> | [How to pass data from child component to parent component?](#How-to-pass-data-from-child-component-to-parent-component)|
 | <span id="Q29">29</span> | [How to perform component communication?](#How-to-perform-component-communication)|
 | <span id="Q30">30</span> | [What is view encapsulation and how to disable it?](#What-is-view-encapsulation-and-how-to-disable-it)|
+| <span id="Q31">31</span> | [What is use of local reference?](#What-is-use-of-local-reference)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -809,3 +810,18 @@ Component communication can be performed through **property binding**, **event b
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q30">**⬆ Back to Question 30**</a>
 
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+
+31. ### What is use of local reference?
+
+* Local reference passes element with all its properties to method.
+e.g.
+
+```html
+<input type=”text” #inputLocalReference/>
+<button (click)=”onAddServer(inputLocalReference)”></button>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q31">**⬆ Back to Question 31**</a>
