@@ -37,6 +37,7 @@
 | <span id="Q29">29</span> | [How to perform component communication?](#How-to-perform-component-communication)|
 | <span id="Q30">30</span> | [What is view encapsulation and how to disable it?](#What-is-view-encapsulation-and-how-to-disable-it)|
 | <span id="Q31">31</span> | [What is use of local reference?](#What-is-use-of-local-reference)|
+| <span id="Q32">32</span> | [How to access local reference in Typescript code?](#How-to-access-local-reference-in-Typescript-code)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -825,3 +826,24 @@ e.g.
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q31">**⬆ Back to Question 31**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+32. ### How to access local reference in Typescript code? 
+
+* Local reference can be accessed in Typescript code by using
+@ViewChild decorator.
+
+e.g.
+```typescript
+@ViewChild(‘someLocalReference’) someLocalReference;
+```
+* Here, `someLocalReference` is local reference. This property can
+now be used in Typescript code as:
+```typescript
+var abc = this.someLocalReference.nativeElement.value;
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q32">**⬆ Back to Question 32**</a>
