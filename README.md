@@ -34,6 +34,7 @@
 | <span id="Q26">26</span> | [How to capture data emitted with event in event binding?](#How-to-capture-data-emitted-with-event-in-event-binding)|
 | <span id="Q27">27</span> | [How to access property of child component from parent component?](#How-to-access-property-of-child-component-from-parent-component)|
 | <span id="Q28">28</span> | [How to pass data from child component to parent component?](#How-to-pass-data-from-child-component-to-parent-component)|
+| <span id="Q29">29</span> | [How to perform component communication?](#How-to-perform-component-communication)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -785,6 +786,8 @@ Pass argument to @output as
   _Questions_ <a href="#Q21">**21**</a> | <a href="#Q22">**22**</a> | <a href="#Q23">**23**</a> | <a href="#Q24">**24**</a> | <a href="#Q25">**25**</a> | <a href="#Q26">**26**</a> | <a href="#Q27">**27**</a> | <a href="#Q28">**28**</a> | <a href="#Q29">**29**</a> | <a href="#Q30">**30**</a>
   ----
 
-29. ### 
+29. ### How to perform component communication?
+
+Component communication can be performed through **property binding**, **event binding** and **services dependency injection**.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q29">**⬆ Back to Question 29**</a>
