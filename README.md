@@ -276,7 +276,16 @@ The above command generates sleleton myservice class in
 
 5. ### What is use of `ngIf` directive?
 
-It is allows to add/remove the DOM element.
+* It is allows to add/remove the DOM element.
+* **_ngIf_** is structural directive. For structural directives * is used before
+directive.
+```html
+<div *ngIf=”isRole”>
+<h3>Hi User</h3>
+</div>
+```
+* In above example only if *isRole* variable is `true` then only **“Hi User”**
+text will be displayed on UI.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q5">**⬆ Back to Question 5**</a>
 
