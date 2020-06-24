@@ -47,6 +47,7 @@
 | <span id="Q39">39</span> | [What is ngDoCheck()?](#What-is-ngDoCheck)|
 | <span id="Q40">40</span> | [What is ngAfterContentInit()?](#What-is-ngAfterContentInit)|
 | <span id="Q41">41</span> | [What is ngAfterContentChecked()?](#What-is-ngAfterContentChecked)|
+| <span id="Q42">42</span> | [What is ngAfterViewInit()?](#What-is-ngAfterViewInit)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1134,3 +1135,15 @@ been projected in the view.
 content projected into the component.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q41">**⬆ Back to Question 41**</a>
+
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
+
+42. ### What is `ngAfterViewInit()`? 
+
+* It is lifecycle hook method which is called when components view
+has been initialized or rendered.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q42">**⬆ Back to Question 42**</a>
+
