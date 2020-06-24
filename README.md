@@ -171,6 +171,12 @@
 
               * Change the DOM layout by adding or removing DOM elements. 
               * e.g. **ngFor**, **ngIf**.
+        * To create directive from CLI : 
+              
+           *  `ng generate directive <directive name>`
+
+           or
+           * `ng g d <directivename>`
 
     *  Modules : 
 
