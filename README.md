@@ -354,7 +354,16 @@ It is used to add/remove CSS Class.
 
 9. ### What is use of `ngStyle` directive?
 
-It is used to modify the style of an HTML Element using expression and also used to change the styles of HTML Element dynamically.
+* It is used to modify the style of an HTML Element using expression and also used to change the styles of HTML Element dynamically.
+* `ngStyle` is used as property of html element. 
+* It is attribute directive. 
+* It is used with square brackets []. [] are not part of directive. ngStyle is then style. The value to style can be string or
+method that return string. The assigned value is Javascript object with key value pair.
+
+e.g.
+```html
+<p [ngStyle=”backgroundColor:getColor()”]>ExampleText</p>
+```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q9">**⬆ Back to Question 9**</a>
 
