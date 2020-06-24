@@ -329,7 +329,15 @@ text will be displayed on UI.
 
 6. ### What is use of `ngSwitch` directive?
 
-It will enable us to add/remove DOM element. If is same as the switch statement of C#.
+* It will enable us to add/remove DOM element. If is same as the switch statement of C#.
+
+```html
+<div [ngSwitch]=”value”>
+  <p *ngSwitchCase=”1”>Value is 1</p>
+  <p *ngSwitchCase=”2”>Value is 1</p>
+  <p *ngSwitchDefault>Value is Default</p>
+</div>
+```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q6">**⬆ Back to Question 6**</a>
 
