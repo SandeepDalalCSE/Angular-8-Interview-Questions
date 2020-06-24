@@ -45,6 +45,7 @@
 | <span id="Q37">37</span> | [What is ngOnChanges()?](#What-is-ngOnChanges)|
 | <span id="Q38">38</span> | [What is ngOnInit()?](#What-is-ngOnInit)|
 | <span id="Q39">39</span> | [What is ngDoCheck()?](#What-is-ngDoCheck)|
+| <span id="Q40">40</span> | [What is ngAfterContentInit()?](#What-is-ngAfterContentInit)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1110,4 +1111,15 @@ of the input property changes i.e. properties decorated with
 * e. g. any click, any input check.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q39">**⬆ Back to Question 39**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+40. ### What is ngAfterContentInit()?
+
+* It is lifecycle hook method which is called after ng-content has
+been projected in the view.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q40">**⬆ Back to Question 40**</a>
 
