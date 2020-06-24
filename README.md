@@ -46,6 +46,7 @@
 | <span id="Q38">38</span> | [What is ngOnInit()?](#What-is-ngOnInit)|
 | <span id="Q39">39</span> | [What is ngDoCheck()?](#What-is-ngDoCheck)|
 | <span id="Q40">40</span> | [What is ngAfterContentInit()?](#What-is-ngAfterContentInit)|
+| <span id="Q41">41</span> | [What is ngAfterContentChecked()?](#What-is-ngAfterContentChecked)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1105,7 +1106,7 @@ of the input property changes i.e. properties decorated with
   _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
   ----
  
-39. ### What is ngDoCheck()?
+39. ### What is `ngDoCheck()`?
 
 * It is lifecycle hook method which will run on every change detection. 
 * e. g. any click, any input check.
@@ -1116,10 +1117,20 @@ of the input property changes i.e. properties decorated with
   _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
   ----
  
-40. ### What is ngAfterContentInit()?
+40. ### What is `ngAfterContentInit()`?
 
 * It is lifecycle hook method which is called after ng-content has
 been projected in the view.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q40">**⬆ Back to Question 40**</a>
 
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
+
+41. ### What is `ngAfterContentChecked()`?
+
+* It is lifecycle hook method which is called after Angular checks the
+content projected into the component.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q41">**⬆ Back to Question 41**</a>
