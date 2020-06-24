@@ -51,6 +51,7 @@
 | <span id="Q43">43</span> | [What is ngAfterViewChecked()?](#What-is-ngAfterViewChecked)|
 | <span id="Q44">44</span> | [What is ngOnDestroy()?](#What-is-ngOnDestroy)|
 | <span id="Q45">45</span> | [What are **_services_** generally?](#What-are-services-generally)|
+| <span id="Q46">46</span> | [How to create **services** and *injecting* into component typescript class in angular (Steps)?](#How-to-create-services-and-injecting-into-component-typescript-class-in-angular-(Steps))|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1186,5 +1187,111 @@ leaks.
 * Services are used for component communication.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q45">**⬆ Back to Question 45**</a>
+
+
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
+
+46. ### How to create services and injecting into component typescript class in angular (Steps)?
+
+`Creating Service Manually`
+* Create **`<ServiceName>.service.ts`** file say as **`persons.service.ts`** and we will implement our common functionality/application logic.
+
+or
+
+`Creating Service Using Angular CLI`
+* `ng generate service <ServiceName>` (or) `ng g service <ServiceName>`
+* Say `ng gererate service persons` : this will create a service with name **`persons.service.ts`**
+
+`Implementing Application in Service`
+
+In **persons.service.ts** class.
+```typescript
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
+
+@Injectable({ providedIn: 'root' })
+export class PersonsService {
+  personChanged = new Subject<string[]>();
+  persons: string[] = [];
+  // persons: string[] = ['Sandeep', 'Ajay', 'Bhavuk'];
+
+  constructor(private http: HttpClient) { }
+
+  fetchPerson() {
+    this.http.get<any>('https://swapi.dev/api/people/').pipe(map(resData => {
+      return resData.results.map(character => character.name);
+    })).subscribe(TransformedData => {
+      console.log(TransformedData);
+      this.personChanged.next(TransformedData);
+      // this.persons.push(TransformedData);
+    });
+  }
+
+  addPerson(name: string) {
+    this.persons.push(name); // item is push into array but still not updated to the DOM because of angular behavior.
+    this.personChanged.next(this.persons); // Here we updating fresh persons array using the object of Subject.
+    console.log(this.persons);
+  }
+
+  removePerson(name: string) {
+    this.persons = this.persons.filter((person, personIndex, personArray) => {
+      console.log(person);
+      console.log(personIndex);
+      console.log(personArray);
+      return person !== name;
+    });
+    console.log(this.persons);
+    this.personChanged.next(this.persons);
+  }
+
+  // We need to subscribe this event 'personChanged' in other parts of the app.
+}
+```
+_Note :_
+    
+  1. The @Injectable() decorator marks it as a service that can be injected, root injector which will make our service an application wide singleton .
+  2.But Angular can't actually inject it anywhere until you configure an Angular dependency injector with a provider of that service.
+
+
+`Injecting Service into another typescript class using Dependency Injection`
+
+* Dependency injection (DI), is major application design pattern.
+* Angular has its own DI framework that is typically used in the
+design of Angular applications to increase their efficiency and
+modularity. 
+* The DI framework lets you supply data to a component from an injectable service class, defined in its own file.
+* Use constructor dependency injection in the class where we want to use this service.
+
+e.g.
+```typescript
+import { Component, Output, EventEmitter } from '@angular/core';
+import { PersonsService } from './persons.service';
+
+@Component({
+  selector: 'app-person-input',
+  templateUrl: './person-input.component.html',
+  styleUrls: ['./person-input.component.css']
+})
+export class PersonInputComponent {
+  // creating object based on this EventEmitter Class, plus this object is also a property of this class 'PersonInputComponent'
+  // @Output() personCreate = new EventEmitter<string>();
+  enteredPersonName = '';
+
+  constructor(private personService: PersonsService) {
+
+  }
+
+  onCreatePerson() {
+    this.personService.addPerson(this.enteredPersonName);
+    this.enteredPersonName = '';
+  }
+}
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q46">**⬆ Back to Question 46**</a>
 
 
