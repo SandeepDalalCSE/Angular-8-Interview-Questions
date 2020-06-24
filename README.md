@@ -51,7 +51,7 @@
 | <span id="Q43">43</span> | [What is ngAfterViewChecked()?](#What-is-ngAfterViewChecked)|
 | <span id="Q44">44</span> | [What is ngOnDestroy()?](#What-is-ngOnDestroy)|
 | <span id="Q45">45</span> | [What are **_services_** generally?](#What-are-services-generally)|
-| <span id="Q46">46</span> | [How to create **services** and *injecting* into component typescript class in angular (Steps)?](#How-to-create-services-and-injecting-into-component-typescript-class-in-angular-(Steps))|
+| <span id="Q46">46</span> | [How to create **services** and *injecting* into component typescript class in angular (Steps)?](#How-to-create-services-and-injecting-into-component-typescript-class-in-angular-Steps)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
