@@ -41,6 +41,7 @@
 | <span id="Q33">33</span> | [What is use of ng-content?](#What-is-use-of-ng-content)|
 | <span id="Q34">34</span> | [How to create custom directive?](#How-to-create-custom-directive)|
 | <span id="Q35">35</span> | [How to create structural directive?](#How-to-create-structural-directive)|
+| <span id="Q36">36</span> | [What is Lifecycle hook in angular?](#What-is-Lifecycle-hook-in-angular)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1053,4 +1054,17 @@ Hello World!
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q35">**⬆ Back to Question 35**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+36. ### What is **_Lifecycle Hook_** in angular?
+
+* A component has a lifecycle managed by Angular.
+* Angular creates component, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM.
+* Angular supplies lifecycle hooks that provide visibility into these
+key life moments and the ability to act when they occur.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q36">**⬆ Back to Question 36**</a>
 
