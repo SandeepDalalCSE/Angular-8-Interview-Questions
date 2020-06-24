@@ -43,6 +43,7 @@
 | <span id="Q35">35</span> | [How to create structural directive?](#How-to-create-structural-directive)|
 | <span id="Q36">36</span> | [What is Lifecycle hook in angular?](#What-is-Lifecycle-hook-in-angular)|
 | <span id="Q37">37</span> | [What is ngOnChanges()?](#What-is-ngOnChanges)|
+| <span id="Q38">38</span> | [What is ngOnInit()?](#What-is-ngOnInit)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1086,4 +1087,15 @@ of the input property changes i.e. properties decorated with
 *@Input*.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q37">**⬆ Back to Question 37**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+38. ### What is `ngOnInit()`?
+
+* It is lifecycle hook method which will be executed once component object is created. 
+* It is executed after constructor.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q38">**⬆ Back to Question 38**</a>
 
