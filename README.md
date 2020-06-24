@@ -40,6 +40,7 @@
 | <span id="Q32">32</span> | [How to access local reference in Typescript code?](#How-to-access-local-reference-in-Typescript-code)|
 | <span id="Q33">33</span> | [What is use of ng-content?](#What-is-use-of-ng-content)|
 | <span id="Q34">34</span> | [How to create custom directive?](#How-to-create-custom-directive)|
+| <span id="Q35">35</span> | [How to create structural directive?](#How-to-create-structural-directive)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -978,32 +979,7 @@ be rendered inside the <ng-content>within the component.
   _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
   ----
  
-34. ### What is use of ng-content? 
-
-* By default anything placed inside opening and closing tag of component is last to be displayed. To display such content you should use `<ng-content>`.
-* Consider a simple `<component-content>` component:
-
-  * e.g.
-  ```html
-  <div>
-  Hi, This is components html !!!
-  <ng-content></ ng-content >
-  </div>
-  <component-content>
-  <div>This text will be displayed inside ng-content</div>
-  </component-content>
-  ```
-* The HTML content passed within the opening and closing tags
-of <component-content> component is the content to be projected. This is what we call Content Projection. The content will
-be rendered inside the <ng-content>within the component.
-
-**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q34">**⬆ Back to Question 34**</a>
-
-----
-  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
-  ----
- 
-35. ### How to create custom directive?
+34. ### How to create custom directive?
 
     1. Create transcript class.
     2. Use **@Directive** on class.
@@ -1018,7 +994,7 @@ e.g.
 selector: ‘[appCustomDirectiveExample]’
 })
 
-Export class CustomDirectiveExample implements OnInit {
+export class CustomDirectiveExample implements OnInit {
 
   Constructor(private elementRef : ElementRef) {}
 
@@ -1027,5 +1003,46 @@ Export class CustomDirectiveExample implements OnInit {
   }
 }
 ```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q34">**⬆ Back to Question 34**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+35. ### How to create structural directive?
+
+    1. Create _directive_ using angular CLI.
+    2. Use **@Input** decorator with property, this property will receive value which will be treated as condition.
+    3. Pass **templateRef** and **viewContainerRef** to `constructor`.
+    4. Use *templateRef* and *viewContainerRef* to modify DOM based on condition.
+
+e.g.
+```typescript
+@Directive({
+selector: '[cpLoop]'
+})
+
+export class CpLoopDecorator {
+
+  constructor( private templateRef: TemplateRef<any>, private viewContainer: ViewContainerRef) { }
+
+  @Input('cpLoop') set loop(num: number) {
+    for(var i=0; i < num; i++) {
+      this.viewContainer.createEmbeddedView(this.templateRef);
+    }
+  }
+}
+```
+
+Place *directive selector* on DOM element.
+
+```html
+<ul>
+<li *cpLoop="5" >
+Hello World!
+</li>
+</ul>
+```
+
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q35">**⬆ Back to Question 35**</a>
 
