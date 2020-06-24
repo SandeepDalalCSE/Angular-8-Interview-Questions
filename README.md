@@ -352,8 +352,7 @@ e.g.
 
 e.g.
 ```html
-<li *ngFor=”let country of countryListArray; let i = index”>
-{{country}}</li>
+<li *ngFor=”let country of countryListArray; let i = index”>{{country}}</li>
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q7">**⬆ Back to Question 7**</a>
