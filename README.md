@@ -50,6 +50,7 @@
 | <span id="Q42">42</span> | [What is ngAfterViewInit()?](#What-is-ngAfterViewInit)|
 | <span id="Q43">43</span> | [What is ngAfterViewChecked()?](#What-is-ngAfterViewChecked)|
 | <span id="Q44">44</span> | [What is ngOnDestroy()?](#What-is-ngOnDestroy)|
+| <span id="Q45">45</span> | [What are services generally?](#What-are-services-generally)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1172,5 +1173,18 @@ about to be destroyed.
 leaks.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q44">**⬆ Back to Question 44**</a>
+
+
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
+
+45. ### What are **services** generally?
+
+* Services are basically used to reduce duplication of code. 
+* E.g. for logging you can create service and use it everywhere. 
+* Services are used for component communication.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q45">**⬆ Back to Question 45**</a>
 
 
