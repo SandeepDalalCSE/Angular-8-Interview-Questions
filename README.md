@@ -1066,5 +1066,9 @@ Hello World!
 * Angular supplies lifecycle hooks that provide visibility into these
 key life moments and the ability to act when they occur.
 
+`Angular Lifecycle`
+
+<img src="images/lifecycle.png">
+
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q36">**⬆ Back to Question 36**</a>
 
