@@ -338,7 +338,23 @@ It will enable us to add/remove DOM element. If is same as the switch statement 
 
 7. ### What is use of `ngFor` directive?
 
-It is used to repeat apart of HTML template once per each item from an iterable list.
+* **_ngFor_** is used to repeat apart of HTML template once per each item from an iterable list.
+* **_ngFor_** is structural directive. For structural directives * is used
+before directive.
+* It is used with *‘let’*.
+
+e.g.
+```html
+<li *ngFor=”let country of countryListArray”>{{country}}</li>
+```
+* It will loop *“li”* element for all **countryListArray**. 
+* You can obtain current index of iteration using *“index”* var.
+
+e.g.
+```html
+<li *ngFor=”let country of countryListArray; let i = index”>
+{{country}}</li>
+```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q7">**⬆ Back to Question 7**</a>
 
