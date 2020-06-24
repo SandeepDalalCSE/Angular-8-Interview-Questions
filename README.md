@@ -42,7 +42,7 @@
 | <span id="Q34">34</span> | [How to create custom directive?](#How-to-create-custom-directive)|
 | <span id="Q35">35</span> | [How to create structural directive?](#How-to-create-structural-directive)|
 | <span id="Q36">36</span> | [What is Lifecycle hook in angular?](#What-is-Lifecycle-hook-in-angular)|
-| <span id="Q37">37</span> | [What is ngOnChanges()?](#What-is-ngOnChanges())|
+| <span id="Q37">37</span> | [What is ngOnChanges()?](#What-is-ngOnChanges)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1077,13 +1077,13 @@ key life moments and the ability to act when they occur.
   _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
   ----
  
-37. ### What is ngOnChanges()?
+37. ### What is `ngOnChanges()`?
 
 * It is lifecycle hook method. It is executed multiple times. 
 * It is executed when component is created. 
 * It is also called when one
 of the input property changes i.e. properties decorated with
-@Input.
+*@Input*.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q37">**⬆ Back to Question 37**</a>
 
