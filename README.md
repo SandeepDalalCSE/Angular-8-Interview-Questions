@@ -39,6 +39,7 @@
 | <span id="Q31">31</span> | [What is use of local reference?](#What-is-use-of-local-reference)|
 | <span id="Q32">32</span> | [How to access local reference in Typescript code?](#How-to-access-local-reference-in-Typescript-code)|
 | <span id="Q33">33</span> | [What is use of ng-content?](#What-is-use-of-ng-content)|
+| <span id="Q34">34</span> | [How to create custom directive?](#How-to-create-custom-directive)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -996,4 +997,35 @@ be rendered inside the <ng-content>within the component.
 of <component-content> component is the content to be projected. This is what we call Content Projection. The content will
 be rendered inside the <ng-content>within the component.
 
-**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q33">**⬆ Back to Question 33**</a>
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q34">**⬆ Back to Question 34**</a>
+
+----
+  _Questions_ <a href="#Q31">**31**</a> | <a href="#Q32">**32**</a> | <a href="#Q33">**33**</a> | <a href="#Q34">**34**</a> | <a href="#Q35">**35**</a> | <a href="#Q36">**36**</a> | <a href="#Q37">**37**</a> | <a href="#Q38">**38**</a> | <a href="#Q39">**39**</a> | <a href="#Q40">**40**</a>
+  ----
+ 
+35. ### How to create custom directive?
+
+    1. Create transcript class.
+    2. Use **@Directive** on class.
+    3. Use selector inside *@Directive*, give appropriate name to *selector*.
+    4. Implement **onInit** interface.
+    5. In **constructor** of class pass **elementRef**.
+    6. In `ngOnInit`- change style of elementRef, this can be done in `constructor` as well.
+
+e.g.
+```typescript
+@Directive({
+selector: ‘[appCustomDirectiveExample]’
+})
+
+Export class CustomDirectiveExample implements OnInit {
+
+  Constructor(private elementRef : ElementRef) {}
+
+  ngOnInit() {
+    this.elementRef.nativeElement.style.color = ‘red’;
+  }
+}
+```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q35">**⬆ Back to Question 35**</a>
+
