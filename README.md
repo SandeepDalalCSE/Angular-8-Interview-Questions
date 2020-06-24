@@ -349,7 +349,17 @@ It is used to repeat apart of HTML template once per each item from an iterable 
 
 8. ### What is use of `ngClass` directive?
 
-It is used to add/remove CSS Class.
+* ngClass is used to add/remove CSS Class.
+* ngClass is used as property of html element.
+* It is attribute directive.
+* It is used to dynamically add css class to element.
+* ngClass is used with with property binding with square brackets
+[].The assigned value is Javascript object with key value pair.
+
+e.g.
+```html
+<p [ngClass]="{‘classname’: person.country ===‘UK’}">ExampleText</p>
+```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q8">**⬆ Back to Question 8**</a>
 
