@@ -1253,8 +1253,8 @@ export class PersonsService {
 ```
 _Note :_
     
-  1. The @Injectable() decorator marks it as a service that can be injected, root injector which will make our service an application wide singleton .
-  2.But Angular can't actually inject it anywhere until you configure an Angular dependency injector with a provider of that service.
+  1. The @Injectable() decorator marks it as a service that can be injected, root injector which will make our service an application wide singleton.
+  2. But Angular can't actually inject it anywhere until you configure an Angular dependency injector with a provider of that service.
 
 
 `Injecting Service into another typescript class using Dependency Injection`
