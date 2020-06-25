@@ -77,6 +77,7 @@
 | <span id="Q69">69</span> | [How to make post request using HttpClient?](#How-to-make-post-request-using-HttpClient)|
 | <span id="Q70">70</span> | [How to make put request using HttpClient?](#How-to-make-put-request-using-HttpClient)|
 | <span id="Q71">71</span> | [How to catch error of http request?](#How-to-catch-error-of-http-request)|
+| <span id="Q72">72</span> | [Which module is required for httpService?](#Which-module-is-required-for-httpService)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1880,4 +1881,16 @@ showConfig() {
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q71">**⬆ Back to Question 71**</a>
+
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
+
+72. ### Which module is required for httpService?
+
+* `HttpModule` is required to be imported in app module.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q72">**⬆ Back to Question 72**</a>
+
+
 
