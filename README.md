@@ -80,6 +80,7 @@
 | <span id="Q72">72</span> | [Which module is required for httpService?](#Which-module-is-required-for-httpService)|
 | <span id="Q73">73</span> | [How to make get request using alternative Http Service instead of HttpClient?](#How-to-make-get-request-using-alternative-Http-Service-instead-of-HttpClient)|
 | <span id="Q74">74</span> | [What is Observable?](#What-is-Observable)|
+| <span id="Q75">75</span> | [What is use of map() operator in observable?](#What-is-use-of-map-operator-in-observable)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1945,5 +1946,25 @@ console.log(response.json());
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q74">**⬆ Back to Question 74**</a>
 
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
 
+75. ### What is use of map() operator in observable?
+
+* `map()` operator is basically used to transform response data.
+
+e.g.
+```typescript
+this.http.get(‘http://localhost:4200/myservice’).map(
+(response : Responce) => {
+const formattedData = response.json();
+return formattedData;
+}
+);
+```
+* *map* is useful because it returns transformed observable to all
+observers and hence uniformity to all observers receiving data.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q75">**⬆ Back to Question 75**</a>
 
