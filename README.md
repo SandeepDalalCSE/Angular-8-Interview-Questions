@@ -67,6 +67,7 @@
 | <span id="Q59">59</span> | [How to add child routes?](#How-to-add-child-routes)|
 | <span id="Q60">60</span> | [What is use of Wildcard routes?](#What-is-use-of-Wildcard-routes)|
 | <span id="Q61">61</span> | [How to apply guard to route?](#How-to-apply-guard-to-route)|
+| <span id="Q62">62</span> | [How to create guard?](#How-to-create-guard)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1627,4 +1628,25 @@ e.g.
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q61">**⬆ Back to Question 61**</a>
+
+----
+  _Questions_ <a href="#Q61">**61**</a> | <a href="#Q62">**62**</a> | <a href="#Q63">**63**</a> | <a href="#Q64">**64**</a> | <a href="#Q65">**65**</a> | <a href="#Q66">**66**</a> | <a href="#Q67">**67**</a> | <a href="#Q68">**68**</a> | <a href="#Q69">**69**</a> | <a href="#Q70">**70**</a>
+  ----
+
+62. ### How to create guard?
+
+* Create service with particular guard name.e.g. RoleGuard.
+* Implement `CanActivate` interface in this service.
+* Implement **canActivate** method. This method will **return Observable`<boolean>` or Promise`<boolean>` or Boolean**.
+* In *canActivate* method write business logic which will confirm if
+route should be accessed or not.
+```typescript
+canActivate(
+  route:ActivatedRouteSnapshot,
+  state:RouterStateSnapshot) : Observable<boolean>|Promise<boolean>|boolean
+  {
+    return true;
+  }
+```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q62">**⬆ Back to Question 62**</a>
 
