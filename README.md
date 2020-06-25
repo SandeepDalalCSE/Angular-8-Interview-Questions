@@ -64,6 +64,7 @@
 | <span id="Q56">56</span> | [How to add query params to url?](#How-to-add-query-params-to-url)|
 | <span id="Q57">57</span> | [How to add query params programmatically?](#How-to-add-query-params-programmatically)|
 | <span id="Q58">58</span> | [How to retrieve query param and fragment from url?](#How-to-retrieve-query-param-and-fragment-from-url)|
+| <span id="Q59">59</span> | [How to add child routes?](#How-to-add-child-routes)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1552,4 +1553,35 @@ this.activatedRoute.fragment.subscribe();
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q58">**⬆ Back to Question 58**</a>
+
+----
+  _Questions_ <a href="#Q51">**51**</a> | <a href="#Q52">**52**</a> | <a href="#Q53">**53**</a> | <a href="#Q54">**54**</a> | <a href="#Q55">**55**</a> | <a href="#Q56">**56**</a> | <a href="#Q57">**57**</a> | <a href="#Q58">**58**</a> | <a href="#Q59">**59**</a> | <a href="#Q60">**60**</a>
+  ----
+
+59. ### How to add child routes?
+
+* By using **‘children’** property of `Routes`.
+
+e.g.
+```typescript
+const appRoutes : Routes = [
+  { 
+    path : ‘users’,
+    component: UserComponent,
+    children: [
+    {
+    path:’id’,
+    component: UserComponent 
+    },
+    {
+    path:’id/update’,
+    component:UpdateUserComponent
+    }]
+  }
+]
+```
+* After children routes are added; add `<router-outlet>` in parent
+component html file. In this `<router-outlet>` child’s will be loaded.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q59">**⬆ Back to Question 59**</a>
 
