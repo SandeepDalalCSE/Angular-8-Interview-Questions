@@ -65,6 +65,7 @@
 | <span id="Q57">57</span> | [How to add query params programmatically?](#How-to-add-query-params-programmatically)|
 | <span id="Q58">58</span> | [How to retrieve query param and fragment from url?](#How-to-retrieve-query-param-and-fragment-from-url)|
 | <span id="Q59">59</span> | [How to add child routes?](#How-to-add-child-routes)|
+| <span id="Q60">60</span> | [What is use of Wildcard routes?](#What-is-use-of-Wildcard-routes)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1584,4 +1585,26 @@ const appRoutes : Routes = [
 component html file. In this `<router-outlet>` child’s will be loaded.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q59">**⬆ Back to Question 59**</a>
+
+----
+  _Questions_ <a href="#Q51">**51**</a> | <a href="#Q52">**52**</a> | <a href="#Q53">**53**</a> | <a href="#Q54">**54**</a> | <a href="#Q55">**55**</a> | <a href="#Q56">**56**</a> | <a href="#Q57">**57**</a> | <a href="#Q58">**58**</a> | <a href="#Q59">**59**</a> | <a href="#Q60">**60**</a>
+  ----
+
+60. ### What is use of Wildcard routes?
+
+* Wild card route is basically used to handle all routes which are not present in `Routes` array, it should be at the bottom of *Routes* array.
+
+e.g.
+```typescript
+{
+  path: 'error',
+  component:ErrorPageComponent
+},
+{
+  path:'**', 
+  redirectTo:'/error'
+}
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q60">**⬆ Back to Question 60**</a>
 
