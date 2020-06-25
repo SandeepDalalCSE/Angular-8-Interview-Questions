@@ -83,6 +83,7 @@
 | <span id="Q75">75</span> | [What is use of map() operator in observable?](#What-is-use-of-map-operator-in-observable)|
 | <span id="Q76">76</span> | [How to send post request in angular using alternative Http Service instead of HttpClient?](#How-to-send-post-request-in-angular-using-alternative-Http-Service-instead-of-HttpClient)|
 | <span id="Q77">77</span> | [What are pipes?](#What-are-pipes)|
+| <span id="Q78">78</span> | [What are different built in pipes?](#What-are-different-built-in-pipes)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2038,4 +2039,23 @@ output.
   ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q77">**⬆ Back to Question 77**</a>
+
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
+
+78. ### What are different built in pipes?
+
+* currency, 
+* date, 
+* decimal, 
+* json, 
+* lowercase, 
+* uppercase, 
+* percent,
+* slice 
+
+are few of the built in pipes.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q78">**⬆ Back to Question 78**</a>
 
