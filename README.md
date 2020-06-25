@@ -1517,7 +1517,11 @@ e.g.
 
 e.g.
 ```typescript
-this.router.navigate([‘/somepath’, id, ‘update’], {queryParams: {allowUpdate:’1’}, fragment: ‘loading’});
+this.router.navigate(
+  [‘/somepath’, id, ‘update’],
+  {queryParams: {allowUpdate:’1’},
+  fragment: ‘loading’}
+  );
 ```
 *In above case url will be
 
