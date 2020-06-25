@@ -52,6 +52,7 @@
 | <span id="Q44">44</span> | [What is ngOnDestroy()?](#What-is-ngOnDestroy)|
 | <span id="Q45">45</span> | [What are **_services_** generally?](#What-are-services-generally)|
 | <span id="Q46">46</span> | [How to create **services** and *injecting* into component typescript class in angular (Steps)?](#How-to-create-services-and-injecting-into-component-typescript-class-in-angular-Steps)|
+| <span id="Q47">47</span> | [What is hierarchical dependency injection in angular?](#What-is-hierarchical-dependency-injection-in-angular)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1188,7 +1189,6 @@ leaks.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q45">**⬆ Back to Question 45**</a>
 
-
 ----
   _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
   ----
@@ -1294,4 +1294,32 @@ export class PersonInputComponent {
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q46">**⬆ Back to Question 46**</a>
 
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
 
+47. ### What is hierarchical dependency injection in angular?
+
+* The Angular dependency injection system is hierarchical. 
+* There is a tree of injectors that is analogues to an app's component tree.
+* You can reconfigure the injectors at any level in that component tree.
+---
+* If service is provided using providers array to AppModule then service is available application wide, which means it is available to all component, services and directives. 
+* Similarly When you
+use *providedIn:'root'* of *@Injectable() decorator*, you are configuring the root injector for the app, which is the injector for AppModule due to which service is available application wide.
+---
+* If service is injected into any component then it will be available to
+its child component and to that particular component. 
+* You can limit the scope of a provider to a component and its children by
+configuring the provider at the component level using the @Component metadata.
+* You can configure a provider at the module level using the providedIn metadata option for a non-root NgModule, in order to limit the scope of the provider to that module. 
+* This is the equivalent of specifying the non-root module in the @Injectable() metadata. You generally don't need to
+specify AppModule with providedIn, because the app's root injector is the AppModule injector. However, if you
+configure a app-wide provider in the@NgModule() metadata for AppModule, it overrides one configured for root in
+the @Injectable()metadata.
+---
+* If service is provided in AppModule and AppComponent as well
+as particular component nearest dependency injection will
+override other dependency injections.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q47">**⬆ Back to Question 47**</a>
