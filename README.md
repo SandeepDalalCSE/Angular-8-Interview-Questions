@@ -62,6 +62,7 @@
 | <span id="Q54">54</span> | [How to pass parameters to route?](#How-to-pass-parameters-to-route)|
 | <span id="Q55">55</span> | [How to fetch parameters in Route?](#How-to-fetch-parameters-in-Route)|
 | <span id="Q56">56</span> | [How to add query params to url?](#How-to-add-query-params-to-url)|
+| <span id="Q57">57</span> | [How to add query params programmatically?](#How-to-add-query-params-programmatically)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1505,4 +1506,22 @@ e.g.
 `localhost:4200/somepath/5/update/allowUpdate=1#loading`
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q56">**⬆ Back to Question 56**</a>
+
+----
+  _Questions_ <a href="#Q51">**51**</a> | <a href="#Q52">**52**</a> | <a href="#Q53">**53**</a> | <a href="#Q54">**54**</a> | <a href="#Q55">**55**</a> | <a href="#Q56">**56**</a> | <a href="#Q57">**57**</a> | <a href="#Q58">**58**</a> | <a href="#Q59">**59**</a> | <a href="#Q60">**60**</a>
+  ----
+
+57. ### How to add query params programmatically?
+
+* By using navigate method of Router.
+
+e.g.
+```typescript
+this.router.navigate([‘/somepath’, id, ‘update’], {queryParams: {allowUpdate:’1’}, fragment: ‘loading’});
+```
+*In above case url will be
+
+`localhost:4200:/somepath/1/update?allowUpdate=1#loading`
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q57">**⬆ Back to Question 57**</a>
 
