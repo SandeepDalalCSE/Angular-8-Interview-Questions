@@ -72,6 +72,7 @@
 | <span id="Q64">64</span> | [How to guard child routes?](#How-to-guard-child-routes)|
 | <span id="Q65">65</span> | [What is HttpClient?](#What-is-HttpClient)|
 | <span id="Q66">66</span> | [Which module is required for HttpClient?](#Which-module-is-required-for-HttpClient)|
+| <span id="Q67">67</span> | [How to make get request using HttpClient?](#How-to-make-get-request-using-HttpClient)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1705,4 +1706,41 @@ backend services over the HTTP protocol.
 using HttpClient.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q66">**⬆ Back to Question 66**</a>
+
+----
+  _Questions_ <a href="#Q61">**61**</a> | <a href="#Q62">**62**</a> | <a href="#Q63">**63**</a> | <a href="#Q64">**64**</a> | <a href="#Q65">**65**</a> | <a href="#Q66">**66**</a> | <a href="#Q67">**67**</a> | <a href="#Q68">**68**</a> | <a href="#Q69">**69**</a> | <a href="#Q70">**70**</a>
+  ----
+
+67. ### How to make get request using HttpClient?
+
+* import **HttpClientModule** into the `AppModule`.
+* Inject the **HttpClient** into constructor of service where you want to
+use it.
+
+e.g.
+```typescript
+constructor(private httpClient: HttpClient) { }
+```
+* Write a method in service and in this method, use get() method of
+HttpClient and subscribe to it.
+
+e.g.
+```typescript
+getSomeData() {
+  this.httpClient.get(‘http://localhost:4200/getService’);
+  }
+```
+* Call service method in component where data is needed to be displayed and subscribe to it.
+```typescript
+showSomeData() {
+  this.someDataService.getSomeData()
+  .subscribe((data: SomeData) => this.componentData = {
+    name: data['name'],
+    address: data['address']
+  });
+}
+```
+* subscription callback copies the data fields into the component's object, which is data-bound in the component template for display.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q67">**⬆ Back to Question 67**</a>
 
