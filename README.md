@@ -84,7 +84,7 @@
 | <span id="Q76">76</span> | [How to send post request in angular using alternative Http Service instead of HttpClient?](#How-to-send-post-request-in-angular-using-alternative-Http-Service-instead-of-HttpClient)|
 | <span id="Q77">77</span> | [What are pipes?](#What-are-pipes)|
 | <span id="Q78">78</span> | [What are different built in pipes?](#What-are-different-built-in-pipes)|
-| <span id="Q79">79</span> | [How to chain pipes?](#How-to-chain-pipe)|
+| <span id="Q79">79</span> | [How to chain pipes?](#How-to-chain-pipes)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
