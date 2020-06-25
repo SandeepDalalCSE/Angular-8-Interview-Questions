@@ -57,6 +57,7 @@
 | <span id="Q49">49</span> | [How to setup routes?](#How-to-setup-routes)|
 | <span id="Q50">50</span> | [Which directive should be used for changing route?](#Which-directive-should-be-used-for-changing-route)|
 | <span id="Q51">51</span> | <a href="#N51">What is difference between **_'/somepath'_** and **_'somepath'_**?</a>|
+| <span id="Q52">52</span> | [How to make selected element active based on selected route?](#How-to-make-selected-element-active-based-on-selected-route)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1401,3 +1402,22 @@ application will persist.
 whereas ‘somepath’ will be relative path.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q51">**⬆ Back to Question 51**</a>
+
+----
+  _Questions_ <a href="#Q51">**51**</a> | <a href="#Q52">**52**</a> | <a href="#Q53">**53**</a> | <a href="#Q54">**54**</a> | <a href="#Q55">**55**</a> | <a href="#Q56">**56**</a> | <a href="#Q57">**57**</a> | <a href="#Q58">**58**</a> | <a href="#Q59">**59**</a> | <a href="#Q60">**60**</a>
+  ----
+
+52. ### How to make selected element active based on selected route?
+
+* routerLinkActive is used for this purpose.
+```html
+<li routerLinkActive = “active”>
+  <a routerLink=’/users’></a>
+</li>
+```
+`[routerLinkActiveOptions]=”{exact: true}”`
+* routerLinkActiveOptions can be used with routerLinkActive can be
+used with routerLinkActive for exact match of path, this is required
+as ‘/’ is part of all routes.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q52">**⬆ Back to Question 52**</a>
