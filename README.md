@@ -71,6 +71,7 @@
 | <span id="Q63">63</span> | [How to create guard from CLI?](#How-to-create-guard-from-CLI)|
 | <span id="Q64">64</span> | [How to guard child routes?](#How-to-guard-child-routes)|
 | <span id="Q65">65</span> | [What is HttpClient?](#What-is-HttpClient)|
+| <span id="Q66">66</span> | [Which module is required for HttpClient?](#Which-module-is-required-for-HttpClient)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1693,4 +1694,15 @@ backend services over the HTTP protocol.
 * **HttpClient** in `@angular/common/http` is used to send HTTP requests or make API calls to RESTful endpoints of remote servers in order to fetch data.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q65">**⬆ Back to Question 65**</a>
+
+----
+  _Questions_ <a href="#Q61">**61**</a> | <a href="#Q62">**62**</a> | <a href="#Q63">**63**</a> | <a href="#Q64">**64**</a> | <a href="#Q65">**65**</a> | <a href="#Q66">**66**</a> | <a href="#Q67">**67**</a> | <a href="#Q68">**68**</a> | <a href="#Q69">**69**</a> | <a href="#Q70">**70**</a>
+  ----
+
+66. ### Which module is required for HttpClient?
+
+* `**HttpClientModule**` is required to be imported in AppModule before
+using HttpClient.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q66">**⬆ Back to Question 66**</a>
 
