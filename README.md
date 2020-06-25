@@ -1566,15 +1566,15 @@ e.g.
 ```typescript
 const appRoutes : Routes = [
   { 
-    path : ‘users’,
+    path : 'users',
     component: UserComponent,
     children: [
     {
-    path:’id’,
+    path:'id',
     component: UserComponent 
     },
     {
-    path:’id/update’,
+    path:'id/update',
     component:UpdateUserComponent
     }]
   }
