@@ -74,6 +74,7 @@
 | <span id="Q66">66</span> | [Which module is required for HttpClient?](#Which-module-is-required-for-HttpClient)|
 | <span id="Q67">67</span> | [How to make get request using HttpClient?](#How-to-make-get-request-using-HttpClient)|
 | <span id="Q68">68</span> | [How to pass headers to http request?](#How-to-pass-headers-to-http-request)|
+| <span id="Q69">69</span> | [How to make post request using HttpClient?](#How-to-make-post-request-using-HttpClient)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1772,4 +1773,55 @@ this.http.post(‘http://localhost’, data, {headers: headersObj });
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q68">**⬆ Back to Question 68**</a>
+
+----
+  _Questions_ <a href="#Q61">**61**</a> | <a href="#Q62">**62**</a> | <a href="#Q63">**63**</a> | <a href="#Q64">**64**</a> | <a href="#Q65">**65**</a> | <a href="#Q66">**66**</a> | <a href="#Q67">**67**</a> | <a href="#Q68">**68**</a> | <a href="#Q69">**69**</a> | <a href="#Q70">**70**</a>
+  ----
+
+69. ### How to make post request using HttpClient?
+
+* import **HttpClientModule** into the `AppModule`.
+* Inject the **HttpClient** into `constructor` of service where you want to
+use it.
+
+e.g.
+```typescript
+constructor(private httpClient: HttpClient) { }
+```
+* Create Header Options
+e.g.
+```typescript
+const httpOptions = {
+  headers: new HttpHeaders(
+    {
+      'Content-Type': 'application/json',
+      'Authorization': 'my-auth-token'
+    }
+  )
+};
+```
+* Write a method in service and in this method use `post()` method of
+**HttpClient** passing url, data and http options to it, then you take
+the *Observables* returned by the *HttpClient* methods and passes
+observable to the pipe for error handling.
+
+e.g.
+```typescript
+addSomeData(data: SomeData): Observable<SomeData > {
+  this.httpClient.post(
+    ‘http://localhost:4200/getService’,
+    data, 
+    httpOptions
+    ).pipe(
+          catchError(this.handleError);
+          );
+}
+```
+* The Component initiates the actual POST operation by subscribing to the *Observable* returned by this service method.
+
+e.g.
+```typescript
+this.someDataService.addSomeData(newData).subscribe(data => this.dataArray.push(data));
+```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q69">**⬆ Back to Question 69**</a>
 
