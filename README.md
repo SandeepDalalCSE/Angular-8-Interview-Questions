@@ -79,6 +79,7 @@
 | <span id="Q71">71</span> | [How to catch error of http request?](#How-to-catch-error-of-http-request)|
 | <span id="Q72">72</span> | [Which module is required for httpService?](#Which-module-is-required-for-httpService)|
 | <span id="Q73">73</span> | [How to make get request using alternative Http Service instead of HttpClient?](#How-to-make-get-request-using-alternative-Http-Service-instead-of-HttpClient)|
+| <span id="Q74">74</span> | [What is Observable?](#What-is-Observable)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1924,6 +1925,25 @@ console.log(response.json());
 },(error)=>console.log(error));
 ```
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q73">**⬆ Back to Question 73**</a>
+
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
+
+74. ### What is Observable?
+
+* Observable is basically datasource. 
+* In angular we import observable from third party package like **_‘rxjs’_**. 
+* It is used to handle asynchronous tasks * e.g. observable is used with http service.
+* *Observable* also has **‘observer’** which is implemented using subscribe method. *Observer* handles data in three ways : 
+
+  * Handle normal data, 
+  * handle error, 
+  * handle completion. 
+
+* In the handling method you can perform your actions.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q74">**⬆ Back to Question 74**</a>
 
 
 
