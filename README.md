@@ -75,6 +75,7 @@
 | <span id="Q67">67</span> | [How to make get request using HttpClient?](#How-to-make-get-request-using-HttpClient)|
 | <span id="Q68">68</span> | [How to pass headers to http request?](#How-to-pass-headers-to-http-request)|
 | <span id="Q69">69</span> | [How to make post request using HttpClient?](#How-to-make-post-request-using-HttpClient)|
+| <span id="Q70">70</span> | [How to make put request using HttpClient?](#How-to-make-put-request-using-HttpClient)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1824,4 +1825,36 @@ e.g.
 this.someDataService.addSomeData(newData).subscribe(data => this.dataArray.push(data));
 ```
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q69">**⬆ Back to Question 69**</a>
+
+----
+  _Questions_ <a href="#Q61">**61**</a> | <a href="#Q62">**62**</a> | <a href="#Q63">**63**</a> | <a href="#Q64">**64**</a> | <a href="#Q65">**65**</a> | <a href="#Q66">**66**</a> | <a href="#Q67">**67**</a> | <a href="#Q68">**68**</a> | <a href="#Q69">**69**</a> | <a href="#Q70">**70**</a>
+  ----
+
+70. ### How to make put request using HttpClient?
+
+* Create service.
+* Inject http service into constructor of service
+
+e.g.
+```typescript
+constructor(private http : Http){}
+```
+* Make http request using post method of http.
+
+e.g.
+```typescript
+putMethod(users: User) {
+  this.http.post(‘http://localhost:8080’, users);
+}
+```
+* `Put` method output is observable.
+* Create subscriber to this observable, else http request will not be sent.
+
+e.g.
+```typescript
+this.putMethodService.putMethod(users).subscribe((responce) => 
+console.log(responce)
+);
+```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q70">**⬆ Back to Question 70**</a>
 
