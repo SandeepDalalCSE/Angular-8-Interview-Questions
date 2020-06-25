@@ -53,6 +53,7 @@
 | <span id="Q45">45</span> | [What are **_services_** generally?](#What-are-services-generally)|
 | <span id="Q46">46</span> | [How to create **services** and *injecting* into component typescript class in angular (Steps)?](#How-to-create-services-and-injecting-into-component-typescript-class-in-angular-Steps)|
 | <span id="Q47">47</span> | [What is hierarchical dependency injection in angular?](#What-is-hierarchical-dependency-injection-in-angular)|
+| <span id="Q48">48</span> | [What is Routing?](#What-is-Routing)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1323,3 +1324,13 @@ as particular component nearest dependency injection will
 override other dependency injections.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q47">**⬆ Back to Question 47**</a>
+
+----
+  _Questions_ <a href="#Q41">**41**</a> | <a href="#Q42">**42**</a> | <a href="#Q43">**43**</a> | <a href="#Q44">**44**</a> | <a href="#Q45">**45**</a> | <a href="#Q46">**46**</a> | <a href="#Q47">**47**</a> | <a href="#Q48">**48**</a> | <a href="#Q49">**49**</a> | <a href="#Q50">**50**</a>
+  ----
+
+48. ### What is Routing?
+
+* When url changes, based on url major part of DOM also changes. This is called routing.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q48">**⬆ Back to Question 48**</a>
