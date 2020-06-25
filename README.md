@@ -82,6 +82,7 @@
 | <span id="Q74">74</span> | [What is Observable?](#What-is-Observable)|
 | <span id="Q75">75</span> | [What is use of map() operator in observable?](#What-is-use-of-map-operator-in-observable)|
 | <span id="Q76">76</span> | [How to send post request in angular using alternative Http Service instead of HttpClient?](#How-to-send-post-request-in-angular-using-alternative-Http-Service-instead-of-HttpClient)|
+| <span id="Q77">77</span> | [What are pipes?](#What-are-pipes)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -1999,4 +2000,42 @@ this.postMethodService.postMethod(users).subscribe((responce) => console.log(res
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q76">**⬆ Back to Question 76**</a>
+
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
+
+77. ### What are pipes?
+
+* A pipe takes in data as input and transforms it to a desired
+output.
+* To create pipe from CLI :
+
+  * `ng generate pipe <name> [options]`
+  
+  or
+
+  * `ng g pipe <name> [options]`
+
+* To use pipe :
+
+  * Pipe is used with string to be transformed after pipe char.
+
+  e.g.
+  ```html  
+  <p>The hero's birthday is {{ birthday | date }}</p>
+  ```
+  * Inside the interpolation expression, you flow the component's birthday value through the **pipe operator ( | )** to the Date pipe function on the right. All pipes work this way.
+
+* To add parameters to a date pipe : 
+
+  * A pipe can accept any number of optional parameters to finetune its output. 
+  * To add parameters to a pipe, follow the pipe name with a colon ( : ) and then the parameter value (such as date:"MM/dd/yy").
+
+  e.g.
+  ```html
+  <p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p>
+  ```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q77">**⬆ Back to Question 77**</a>
 
