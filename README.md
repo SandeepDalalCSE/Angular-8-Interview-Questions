@@ -96,6 +96,7 @@
 | <span id="Q88">88</span> | [Why form validation is required?](#Why-form-validation-is-required)|
 | <span id="Q89">89</span> | [What are different types of validator functions?](#What-are-different-types-of-validator-functions)|
 | <span id="Q90">90</span> | [What are different built-in validators?](#What-are-different-built-in-validators)|
+| <span id="Q91">91</span> | [How to add validation messages for input controls in form?](#How-to-add-validation-messages-for-input-controls-in-form)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2270,4 +2271,20 @@ equal to the provided number.
 * **pattern :** Validator that requires the control's value to match a regex pattern.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q90">**⬆ Back to Question 90**</a>
+
+----
+  _Questions_ <a href="#Q91">**91**</a> | <a href="#Q92">**92**</a> | <a href="#Q93">**93**</a> | <a href="#Q94">**94**</a> | <a href="#Q95">**95**</a> | <a href="#Q96">**96**</a> | <a href="#Q97">**97**</a> | <a href="#Q98">**98**</a> | <a href="#Q99">**99**</a> | <a href="#Q100">**100**</a>
+  ----
+
+91. ### How to add validation messages for input controls in form?
+
+* Use span which will display error message along with input control.
+
+e.g.
+```html
+<input name=”email” required email #email=”ngModel”/>
+<span *ngIf=”!email.valid && email.touched”>Please enter valid
+email ID!!!</span>
+```
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q91">**⬆ Back to Question 91**</a>
 
