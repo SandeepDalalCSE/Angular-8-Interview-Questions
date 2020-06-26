@@ -98,6 +98,7 @@
 | <span id="Q90">90</span> | [What are different built-in validators?](#What-are-different-built-in-validators)|
 | <span id="Q91">91</span> | [How to add validation messages for input controls in form?](#How-to-add-validation-messages-for-input-controls-in-form)|
 | <span id="Q92">92</span> | [What is animation in angular?](#What-is-animation-in-angular)|
+| <span id="Q93">93</span> | [How to use animation in angular?](#How-to-use-animation-in-angular)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2303,4 +2304,87 @@ email ID!!!</span>
 `@angular/animations@latest --save`
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q92">**⬆ Back to Question 92**</a>
+
+----
+  _Questions_ <a href="#Q91">**91**</a> | <a href="#Q92">**92**</a> | <a href="#Q93">**93**</a> | <a href="#Q94">**94**</a> | <a href="#Q95">**95**</a> | <a href="#Q96">**96**</a> | <a href="#Q97">**97**</a> | <a href="#Q98">**98**</a> | <a href="#Q99">**99**</a> | <a href="#Q100">**100**</a>
+  ----
+
+93. ### How to use animation in angular?
+
+* If you plan to use specific animation functions in component files,
+*import* those functions using **@angular/animations**.
+* In the component file, add a metadata property called *animations*: within the *@Component()* decorator. You put
+the trigger which defines an animation within the animations metadata property.
+* Use the **style()** function to define a set of styles to associate with Angular's state() function to define different states to call at the end of each transition.
+
+e.g.
+```typescript
+state('open', style({
+height: '200px',
+opacity: 1,
+backgroundColor: 'yellow'
+})),
+state('closed', style({
+height: '100px',
+opacity: 0.5,
+backgroundColor: 'green'
+})),
+```
+* Then, use the **transition()** function which accepts two arguments:
+
+  * the first argument accepts an expression that specifies the direction between two transition states, and 
+  * the second argument accepts an animate() function.
+* The animate() function (second argument of the transition function) accepts the timings and styles as input parameters.
+
+e.g.
+```typescript
+transition('open => closed', [ animate('1s') ]),
+```
+* Above example provides a state transition from open to closed having a one second transition between states.
+* An animation needs a trigger, so that it knows when to start.
+* The **trigger()** function collects the states and transitions, and gives the animation a name, so that you can bind it to the triggering element in the HTML template.
+
+e.g.
+```typescript
+@Component({
+selector: 'app-open-close',
+animations: [
+trigger('openClose', [
+// ...
+state('open', style({
+height: '200px',
+opacity: 1,
+backgroundColor: 'yellow'
+})),
+state('closed', style({
+height: '100px',
+opacity: 0.5,
+backgroundColor: 'green'
+})),
+transition('open => closed', [
+animate('1s')
+]),
+transition('closed => open', [
+animate('0.5s')
+]),
+]),
+],
+templateUrl: 'open-close.component.html',
+styleUrls: ['open-close.component.css']
+})
+export class OpenCloseComponent {
+  isOpen = true;
+  toggle() {
+    this.isOpen = !this.isOpen;
+    }
+}
+```
+* The following code snippet binds the trigger to the value of the isOpen property.
+```html
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="openclose-
+container">
+<p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p> 
+</div>
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q93">**⬆ Back to Question 93**</a>
 
