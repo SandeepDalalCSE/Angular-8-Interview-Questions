@@ -88,6 +88,7 @@
 | <span id="Q80">80</span> | [How to create custom pipe?](#How-to-create-custom-pipe)|
 | <span id="Q81">81</span> | [How to pass parameters to custom pipe?](#How-to-pass-parameters-to-custom-pipe)|
 | <span id="Q82">82</span> | [What is pure pipe and impure pipe?](#What-is-pure-pipe-and-impure-pipe)|
+| <span id="Q83">83</span> | [What are approaches to handle form?](#What-are-approaches-to-handle-form)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2139,3 +2140,19 @@ transform(value: number, exponent: string)
   * Impure pipe: An impure pipe is executed during every component change detection cycle. An impure pipe is called often, as frequently as every keystroke or mouse-move. You make a pipe impure by setting its pure flag to false.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q82">**⬆ Back to Question 82**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+83. ### What are approaches to handle form?
+
+* Angular provides two different approaches to handling user input
+through forms: **template-driven** and **reactive**. 
+* Both approaches capture users input events from the view, validate the user input, generate a form model and data model to update, and provide a way to track changes.
+  
+  * **Reactive forms** are more robust: they're more scalable, testable and reusable. If forms are a crucial part of your application, or you're already using reactive patterns for building your application, use reactive forms.
+  * **Template-driven forms** are helpful for adding a simple form to an app, such as an email list signup form. They're easy to add to an app, but they don't scale as well as reactive forms. If you have very basic form requirements and logic that can be managed solely in the template, use template-driven forms.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q83">**⬆ Back to Question 83**</a>
+
