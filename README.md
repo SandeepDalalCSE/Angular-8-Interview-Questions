@@ -85,6 +85,7 @@
 | <span id="Q77">77</span> | [What are pipes?](#What-are-pipes)|
 | <span id="Q78">78</span> | [What are different built in pipes?](#What-are-different-built-in-pipes)|
 | <span id="Q79">79</span> | [How to chain pipes?](#How-to-chain-pipes)|
+| <span id="Q80">80</span> | [How to create custom pipe?](#How-to-create-custom-pipe)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2075,4 +2076,34 @@ e.g.
 * **_Note :_** Pipes are applied left to right.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q79">**⬆ Back to Question 79**</a>
+
+----
+  _Questions_ <a href="#Q71">**71**</a> | <a href="#Q72">**72**</a> | <a href="#Q73">**73**</a> | <a href="#Q74">**74**</a> | <a href="#Q75">**75**</a> | <a href="#Q76">**76**</a> | <a href="#Q77">**77**</a> | <a href="#Q78">**78**</a> | <a href="#Q79">**79**</a> | <a href="#Q80">**80**</a>
+  ----
+
+80. ### How to create custom pipe?
+
+* Create class and implement `PipeTransform` interface which will force you to use transform method.
+* In **transform** method write transformation logic and return
+transformed data.
+* Use **@Pipe** decorator on this class and give name to the pipe using name property of *@Pipe*.
+
+e.g.
+```typescript
+@Pipe({name: 'exponentialStrength'})
+export class ExponentialStrengthPipe implements PipeTransform {
+  transform(value: number, exponent: string): number
+  {
+    let expnt = parseFloat(exponent);
+    return Math.pow(value, isNaN(expnt) ? 1 : expnt);
+  }
+}
+```
+* Use this pipe in template as, 
+
+```html
+<p>Super power boost: {{2 |  exponentialStrength: 10}}</p>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q80">**⬆ Back to Question 80**</a>
 
