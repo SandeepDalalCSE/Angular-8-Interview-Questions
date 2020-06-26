@@ -93,6 +93,7 @@
 | <span id="Q85">85</span> | [How to access form input controls in Typescript class?](#How-to-access-form-input-controls-in-Typescript-class)|
 | <span id="Q86">86</span> | [What are the important properties of ngForm?](#What-are-the-important-properties-of-ngForm)|
 | <span id="Q87">87</span> | [How to access form without submit?](#How-to-access-form-without-submit)|
+| <span id="Q88">88</span> | [Why form validation is required?](#Why-form-validation-is-required)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2225,4 +2226,14 @@ this.anyForm;
 ```
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q87">**⬆ Back to Question 87**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+88. ### Why form validation is required?
+
+* To improve overall data quality by validating user input for accuracy and completeness.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q88">**⬆ Back to Question 88**</a>
 
