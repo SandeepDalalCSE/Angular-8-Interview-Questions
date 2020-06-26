@@ -91,6 +91,7 @@
 | <span id="Q83">83</span> | [What are approaches to handle form?](#What-are-approaches-to-handle-form)|
 | <span id="Q84">84</span> | [Which module is required for form?](#Which-module-is-required-for-form)|
 | <span id="Q85">85</span> | [How to access form input controls in Typescript class?](#How-to-access-form-input-controls-in-Typescript-class)|
+| <span id="Q86">86</span> | [What are the important properties of ngForm?](#What-are-the-important-properties-of-ngForm)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2185,4 +2186,21 @@ e.g.
 * All values will be available in “value” property of **“ngForm”**.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q85">**⬆ Back to Question 85**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+86. ### What are the important properties of ngForm?
+
+* In Angular, the following statuses are often used by forms:
+  * **valid** – state of the validity of all form controls, true if all controls are valid
+  * **invalid** – inverse of valid; true if some form control is invalid
+  * **pristine** – gives a status about the “cleanness” of the form; true if no form control was modified
+  * **dirty** – inverse of pristine; true if some control was modified
+  * **disabled** - Reports whether the control is disabled.
+  * **enabled** - Reports whether the control is enabled.
+  * **touched** - Reports whether the control is touched, meaning that the user has triggered a blur event on it.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q86">**⬆ Back to Question 86**</a>
 
