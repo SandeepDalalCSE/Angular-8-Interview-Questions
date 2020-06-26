@@ -95,6 +95,7 @@
 | <span id="Q87">87</span> | [How to access form without submit?](#How-to-access-form-without-submit)|
 | <span id="Q88">88</span> | [Why form validation is required?](#Why-form-validation-is-required)|
 | <span id="Q89">89</span> | [What are different types of validator functions?](#What-are-different-types-of-validator-functions)|
+| <span id="Q90">90</span> | [What are different built-in validators?](#What-are-different-built-in-validators)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2251,4 +2252,22 @@ async validators.
   * **Async validators**: functions that take a control instance as well as return a Promise or Observable that later emits a set of validation errors or null. You can pass these in as the third argument when you instantiate a *FormControl*.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q89">**⬆ Back to Question 89**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+90. ### What are different built-in validators?
+
+* **min :** Validator that requires the control's value to be greater than
+or equal to the provided number.
+* **max :** Validator that requires the control's value to be less than or
+equal to the provided number.
+* **required :** Validator that requires the control have a non-empty value.
+* **email :** Validator that requires the control's value pass an email validation test.
+* **minLength :** Validator that requires the length of the control's value to be greater than or equal to the provided minimum length.
+* **maxLength :** Validator that requires the length of the control's value to be less than or equal to the provided maximum length.
+* **pattern :** Validator that requires the control's value to match a regex pattern.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q90">**⬆ Back to Question 90**</a>
 
