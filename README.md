@@ -86,6 +86,7 @@
 | <span id="Q78">78</span> | [What are different built in pipes?](#What-are-different-built-in-pipes)|
 | <span id="Q79">79</span> | [How to chain pipes?](#How-to-chain-pipes)|
 | <span id="Q80">80</span> | [How to create custom pipe?](#How-to-create-custom-pipe)|
+| <span id="Q81">81</span> | [How to pass parameters to custom pipe?](#How-to-pass-parameters-to-custom-pipe)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2107,3 +2108,19 @@ export class ExponentialStrengthPipe implements PipeTransform {
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q80">**⬆ Back to Question 80**</a>
 
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+81. ### How to pass parameters to custom pipe?
+
+* Add argument to transform method.
+```typescript
+transform(value: number, exponent: string)
+```
+* In template pass parameter to pipe using colon **“:”**.
+```html
+<p>Super power boost: {{2 |  exponentialStrength: 10}}</p>
+```
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q81">**⬆ Back to Question 81**</a>
