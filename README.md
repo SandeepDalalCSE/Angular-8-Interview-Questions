@@ -2381,8 +2381,7 @@ export class OpenCloseComponent {
 ```
 * The following code snippet binds the trigger to the value of the isOpen property.
 ```html
-<div [@openClose]="isOpen ? 'open' : 'closed'" class="openclose-
-container">
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="openclose-container">
 <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p> 
 </div>
 ```
