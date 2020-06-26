@@ -90,6 +90,7 @@
 | <span id="Q82">82</span> | [What is pure pipe and impure pipe?](#What-is-pure-pipe-and-impure-pipe)|
 | <span id="Q83">83</span> | [What are approaches to handle form?](#What-are-approaches-to-handle-form)|
 | <span id="Q84">84</span> | [Which module is required for form?](#Which-module-is-required-for-form)|
+| <span id="Q85">85</span> | [How to access form input controls in Typescript class?](#How-to-access-form-input-controls-in-Typescript-class)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2166,4 +2167,22 @@ through forms: **template-driven** and **reactive**.
 * **_`FormModule`_**
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q84">**⬆ Back to Question 84**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+85. ### How to access form input controls in Typescript class?
+
+* On form tag create **ngSubmit** event and write method against it.
+* Create local reference to form element and assign it values of form using ngForm and pass it to submit method.
+
+e.g.
+```html
+<form (ngSubmit)=”onSubmit(f)” #f=”ngForm”>
+```
+* Now if we submit form, form values will be available to onSubmit() method. 
+* All values will be available in “value” property of **“ngForm”**.
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q85">**⬆ Back to Question 85**</a>
 
