@@ -2385,6 +2385,6 @@ export class OpenCloseComponent {
 container">
 <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p> 
 </div>
-
+```
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q93">**⬆ Back to Question 93**</a>
 
