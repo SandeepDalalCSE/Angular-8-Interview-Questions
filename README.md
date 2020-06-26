@@ -89,6 +89,7 @@
 | <span id="Q81">81</span> | [How to pass parameters to custom pipe?](#How-to-pass-parameters-to-custom-pipe)|
 | <span id="Q82">82</span> | [What is pure pipe and impure pipe?](#What-is-pure-pipe-and-impure-pipe)|
 | <span id="Q83">83</span> | [What are approaches to handle form?](#What-are-approaches-to-handle-form)|
+| <span id="Q84">84</span> | [Which module is required for form?](#Which-module-is-required-for-form)|
 
 ----
   _Questions_ <a href="#Q1">**1**</a> | <a href="#Q2">**2**</a> | <a href="#Q3">**3**</a> | <a href="#Q4">**4**</a> | <a href="#Q5">**5**</a> | <a href="#Q6">**6**</a> | <a href="#Q7">**7**</a> | <a href="#Q8">**8**</a> | <a href="#Q9">**9**</a> | <a href="#Q10">**10**</a>
@@ -2155,4 +2156,14 @@ through forms: **template-driven** and **reactive**.
   * **Template-driven forms** are helpful for adding a simple form to an app, such as an email list signup form. They're easy to add to an app, but they don't scale as well as reactive forms. If you have very basic form requirements and logic that can be managed solely in the template, use template-driven forms.
 
 **[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q83">**⬆ Back to Question 83**</a>
+
+----
+  _Questions_ <a href="#Q81">**81**</a> | <a href="#Q82">**82**</a> | <a href="#Q83">**83**</a> | <a href="#Q84">**84**</a> | <a href="#Q85">**85**</a> | <a href="#Q86">**86**</a> | <a href="#Q87">**87**</a> | <a href="#Q88">**88**</a> | <a href="#Q89">**89**</a> | <a href="#Q90">**90**</a>
+  ----
+
+84. ### Which module is required for form?
+
+* **_`FormModule`_**
+
+**[⬆ Back to Top](#table-of-contents)**   |   <a href="#Q84">**⬆ Back to Question 84**</a>
 
